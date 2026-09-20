@@ -12,6 +12,7 @@
  ],
  "grammar": [
   "data/grammar/g01-g11.json",
+  "data/grammar/g12-g15.json",
   "data/grammar/g23-g33.json",
   "data/grammar/g34-g43.json",
   "data/grammar/g44-g53.json",
