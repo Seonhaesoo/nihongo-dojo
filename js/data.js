@@ -66,7 +66,8 @@ export const isSoundLesson = g => g.id.startsWith('k');
 /** 문법 레슨에서 SRS에 넣을 예문 카드 id (포인트별 첫 예문, 최대 3개) */
 export function sentenceCardIds(g) {
   if (isSoundLesson(g)) return []; // 발음 규칙 레슨의 예시는 단어라서 카드로 만들지 않는다
-  return g.points.slice(0, 3).map((_, i) => `${g.id}#${i}`);
+  // '書く → 書いて' 같은 활용 쌍은 앞면에 답이 보이므로 카드로 만들지 않는다 (활용은 '활용 연습'에서 훈련)
+  return g.points.map((pt, i) => (pt.examples[0].jp.includes('→') ? null : `${g.id}#${i}`)).filter(Boolean).slice(0, 3);
 }
 export function sentenceOf(cardId) {
   const [gid, idx] = cardId.split('#');
