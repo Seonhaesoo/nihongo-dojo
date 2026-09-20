@@ -13,6 +13,12 @@ if (synth) {
 
 export function jaVoices() { if (!voices.length) refresh(); return voices; }
 export function supported() { return !!synth; }
+/** 듣기 문제를 낼 수 있는가: 음성 목록이 아직 비어 있으면(일부 모바일) 가능하다고 본다 */
+export function canListen() {
+  if (!synth) return false;
+  const all = synth.getVoices();
+  return all.length === 0 || jaVoices().length > 0;
+}
 
 function pickVoice(index = 0) {
   const list = jaVoices();

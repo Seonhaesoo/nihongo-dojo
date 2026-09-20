@@ -45,7 +45,7 @@ function buildMock(n) {
     const k = sample(db.kanji, 14);
     const kana = sample(db.kana.filter(x => x.script === 'katakana' && x.group === 'basic'), 6);
     return shuffle([
-      ...v.slice(0, 12).map(x => vocabQuestion(x, 'j2k')), ...v.slice(12, 20).map(x => vocabQuestion(x, 'read')), ...v.slice(20, 26).map(x => vocabQuestion(x, 'k2j')), ...v.slice(26).map(x => vocabQuestion(x, 'listen')),
+      ...v.slice(0, 12).map(x => vocabQuestion(x, 'j2k')), ...v.slice(12, 20).map(x => vocabQuestion(x, 'read')), ...v.slice(20, 26).map(x => vocabQuestion(x, 'k2j')), ...v.slice(26).map(x => questionFor(x, { vocab: ['listen', 'j2k'] })),
       ...k.slice(0, 7).map(x => kanjiQuestion(x, 'word')), ...k.slice(7).map(x => kanjiQuestion(x, 'm2k')),
       ...kana.map(x => questionFor(x))
     ].filter(Boolean));

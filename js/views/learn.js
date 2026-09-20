@@ -3,7 +3,7 @@ import { h, clear, chunk, shuffle, confirmDialog } from '../util.js';
 import { db, dayItems, itemsUpTo } from '../data.js';
 import * as store from '../store.js';
 import { detailFor, speechOf } from '../cards.js';
-import { autoSpeak } from '../tts.js';
+import { autoSpeak, canListen } from '../tts.js';
 import { runQuiz, kanaQuestion, vocabQuestion, kanjiQuestion } from '../quiz.js';
 import { checkDayComplete } from './day.js';
 
@@ -15,7 +15,7 @@ function practiceQuestions(items, kind, n) {
     const pool = upTo.length >= 8 ? upTo : db.kana;
     // 탁음·요음처럼 규칙으로 읽는 글자는 한 번씩만 확인하고 넘어간다 (지루함 방지)
     const second = items.every(k => k.group !== 'basic') ? shuffle(items).slice(0, Math.ceil(items.length / 2)) : shuffle(items);
-    return [...items.map(k => kanaQuestion(k, 'k2r', pool)), ...second.map(k => kanaQuestion(k, Math.random() < 0.5 ? 'listen' : 'r2k', pool))];
+    return [...items.map(k => kanaQuestion(k, 'k2r', pool)), ...second.map(k => kanaQuestion(k, canListen() && Math.random() < 0.5 ? 'listen' : 'r2k', pool))];
   }
   if (kind === 'kanji') {
     const pool = upTo.length >= 8 ? upTo : db.kanji;

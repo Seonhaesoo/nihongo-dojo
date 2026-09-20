@@ -1,7 +1,7 @@
 // 퀴즈 엔진: 문항 생성기 + 실행기(객관식 / 입력 / 어순 배열)
 import { h, clear, ruby, rich, esc, shuffle, sample, hasKanji, stripMarkup, confirmDialog } from './util.js';
 import { db } from './data.js';
-import { speak, autoSpeak } from './tts.js';
+import { speak, autoSpeak, canListen } from './tts.js';
 import { recordAnswer } from './store.js';
 import { normalizeKana } from './romaji.js';
 import { conjugate, distractors as conjDistractors } from './conjugate.js';
@@ -40,7 +40,7 @@ export function kanaQuestion(k, mode, pool = db.kana) {
     const others = pickOthers(same, k, p => p.romaji, 3, prefer);
     return { kind: 'choice', itemId: k.id, label: mode === 'listen' ? '들리는 소리의 글자를 고르세요' : '이 발음의 글자를 고르세요',
       promptHtml: mode === 'listen' ? '<span class="quiz__ear">🔊</span>' : `<span class="quiz__big">${esc(k.romaji)}</span><span class="quiz__sub">${esc(k.ko)}</span>`,
-      speakOnShow: mode === 'listen' ? k.kana : null, replay: mode === 'listen' ? k.kana : null, speak: k.kana, glyphChoices: true,
+      speakOnShow: mode === 'listen' ? k.kana : null, replay: mode === 'listen' ? k.kana : null, revealHtml: `<span class="quiz__big">${esc(k.romaji)}</span><span class="quiz__sub">${esc(k.ko)}</span>`, speak: k.kana, glyphChoices: true,
       choices: mixChoices({ html: `<span class="glyph">${esc(k.kana)}</span>` }, others.map(p => ({ html: `<span class="glyph">${esc(p.kana)}</span>` }))) };
   }
   const others = pickOthers(same, k, p => p.romaji, 3, prefer);
@@ -70,7 +70,7 @@ export function vocabQuestion(v, mode, pool = db.vocab) {
   const listen = mode === 'listen';
   return { kind: 'choice', itemId: v.id, label: listen ? '듣고 뜻을 고르세요' : '뜻을 고르세요',
     promptHtml: listen ? '<span class="quiz__ear">🔊</span>' : `<span class="quiz__word jp">${wordHtml(v)}</span>`,
-    speakOnShow: listen ? v.kana : null, replay: listen ? v.kana : null, speak: v.kana, afterHtml: (listen ? `<p class="quiz__reveal jp">${wordHtml(v)}</p>` : '') + after,
+    speakOnShow: listen ? v.kana : null, replay: listen ? v.kana : null, revealHtml: `<span class="quiz__word jp">${wordHtml(v)}</span>`, speak: v.kana, afterHtml: (listen ? `<p class="quiz__reveal jp">${wordHtml(v)}</p>` : '') + after,
     choices: mixChoices({ html: esc(v.ko) }, others.map(p => ({ html: esc(p.ko) }))) };
 }
 
@@ -119,10 +119,11 @@ export function conjQuestion(v, form) {
 
 /** 항목 종류에 맞는 문항을 무작위 모드로 만든다 */
 export function questionFor(it, modes) {
-  if (it.type === 'kana') return kanaQuestion(it, sample(modes?.kana || ['k2r', 'r2k', 'listen'], 1)[0]);
+  const ok = m => m !== 'listen' || canListen();
+  if (it.type === 'kana') return kanaQuestion(it, sample((modes?.kana || ['k2r', 'r2k', 'listen']).filter(ok), 1)[0]);
   if (it.type === 'kanji') return kanjiQuestion(it, sample(modes?.kanji || ['k2m', 'm2k', 'word'], 1)[0]);
   if (it.type === 'vocab') {
-    const ms = (modes?.vocab || ['j2k', 'k2j', 'listen', 'read']).filter(m => m !== 'read' || hasKanji(it.jp));
+    const ms = (modes?.vocab || ['j2k', 'k2j', 'listen', 'read']).filter(m => ok(m) && (m !== 'read' || hasKanji(it.jp)));
     return vocabQuestion(it, sample(ms, 1)[0]);
   }
   return null;
@@ -189,7 +190,13 @@ export function runQuiz(root, questions, opts = {}) {
     body.append(
       h('p', { class: 'quiz__label' }, q.tag ? h('span', { class: 'chip chip--soft' }, q.tag) : null, q.label),
       q.promptHtml ? h('div', { class: 'quiz__prompt', html: q.promptHtml }) : null);
-    if (q.replay) body.querySelector('.quiz__prompt')?.append(h('button', { class: 'btn btn--ghost btn--sm', onclick: () => speak(q.replay) }, '다시 듣기'));
+    if (q.replay) {
+      const prompt = body.querySelector('.quiz__prompt');
+      const tools = h('div', { class: 'btnrow' },
+        h('button', { class: 'btn btn--ghost btn--sm', onclick: () => speak(q.replay) }, '다시 듣기'),
+        q.revealHtml ? h('button', { class: 'btn btn--ghost btn--sm', onclick: () => { prompt.querySelector('.quiz__ear')?.replaceWith(h('span', { html: q.revealHtml, style: { display: 'contents' } })); } }, '소리가 안 나오면 · 글자로 보기') : null);
+      prompt?.append(tools);
+    }
     if (q.speakOnShow) speak(q.speakOnShow);
   }
 
