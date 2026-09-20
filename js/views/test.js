@@ -52,7 +52,7 @@ function buildMock(n) {
   }
   const verbs = sample(db.vocab.filter(x => /^동사/.test(x.pos)), 10);
   const forms = VERB_FORMS.filter(f => ['te', 'nai', 'ta', 'masu'].includes(f.key));
-  return shuffle([...grammarQs(db.grammar.filter(g => g.day <= 69), 40), ...verbs.map(v => conjQuestion(v, sample(forms, 1)[0]))].filter(Boolean));
+  return shuffle([...grammarQs(db.grammar.filter(g => g.id.startsWith('g') && g.day <= 69), 40), ...verbs.map(v => conjQuestion(v, sample(forms, 1)[0]))].filter(Boolean));
 }
 
 export default function test([nStr]) {

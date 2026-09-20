@@ -16,7 +16,7 @@ const DEFAULT_SETTINGS = {
 };
 
 function fresh() {
-  return { version: 1, createdAt: new Date().toISOString(), startDay: null, settings: { ...DEFAULT_SETTINGS }, cards: {}, days: {}, log: {}, itemStats: {} };
+  return { version: 1, createdAt: new Date().toISOString(), startDay: null, settings: { ...DEFAULT_SETTINGS }, cards: {}, days: {}, log: {}, itemStats: {}, lessons: {} };
 }
 
 let state = fresh();
@@ -118,6 +118,10 @@ export function weakItems(limit = 20) {
     .sort((a, b) => (b[1].w / (b[1].r + b[1].w)) - (a[1].w / (a[1].r + a[1].w)) || b[1].w - a[1].w)
     .slice(0, limit).map(([id]) => id);
 }
+
+// ── 레슨(문법·발음) 통과 기록 ──
+export function markLesson(id, score) { touchStart(); (state.lessons ||= {})[id] = { score, at: dayNum() }; save(); emit(); }
+export function isLessonDone(id) { return !!state.lessons?.[id] || `${id}#0` in state.cards; }
 
 // ── Day 진행 ──
 export function dayState(n) { return (state.days[n] ||= { steps: {}, completedAt: null }); }

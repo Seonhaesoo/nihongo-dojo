@@ -1,8 +1,25 @@
 // 홈 (道場): 오늘의 수련, 복습 대기, 출석 도장, 진도
-import { h, ruby, dayNum, dateKey, weekdayKo, pct } from '../util.js';
-import { db, dayMeta, weekMeta, daySteps, totalDays, sentenceCardIds } from '../data.js';
+import { h, ruby, dayNum, dateKey, weekdayKo, pct, modal } from '../util.js';
+import { db, dayMeta, weekMeta, daySteps, totalDays } from '../data.js';
 import * as store from '../store.js';
 import { progressBar, stamp, japaneseDate } from '../ui.js';
+import { speak, jaVoices } from '../tts.js';
+
+function welcome() {
+  const voiceNote = h('p', { class: 'welcome__voice' });
+  const m = modal(h('div', { class: 'welcome' },
+    h('p', { class: 'kicker' }, 'ようこそ · 환영합니다'),
+    h('h2', { class: 'h1' }, '오늘부터 12주, 매일 도장 하나'),
+    h('ol', { class: 'steps-guide' },
+      h('li', null, h('b', null, '오늘의 수련'), '을 누르면 그날 할 일이 순서대로 나옵니다. 하루 90~120분이 목표입니다.'),
+      h('li', null, h('b', null, '복습이 먼저'), '입니다. 어제 배운 것이 오늘 복습 카드로 돌아옵니다. 잊을 만하면 다시 보여 주는 것이 이 코스의 핵심입니다.'),
+      h('li', null, h('b', null, '소리 내어'), ' 따라 읽으세요. 마무리 테스트에서 80점을 넘기면 그날의 도장이 찍힙니다.')),
+    h('div', { class: 'welcome__sound' },
+      h('button', { class: 'btn btn--ghost', onclick: () => { speak('こんにちは。いっしょにがんばりましょう。'); voiceNote.textContent = jaVoices().length ? '“곤니치와, 잇쇼니 간바리마쇼-”가 들리면 준비 완료입니다.' : '일본어 음성이 없는 기기입니다. 설정 화면의 안내를 확인해 주세요.'; } }, '🔊 소리가 나오는지 확인'),
+      voiceNote),
+    h('button', { class: 'btn btn--primary btn--lg btn--block', onclick: () => m.close() }, '시작하기')),
+    { onClose: () => store.setSetting('welcomed', true) });
+}
 
 export default function home() {
   const total = totalDays();
@@ -67,7 +84,7 @@ export default function home() {
   // 영역별 진도
   const count = pred => store.cardCounts(pred).total;
   const isType = (type, extra = () => true) => id => { const it = db.items.get(id); return !!it && !id.includes('#') && it.type === type && extra(it); };
-  const lessonsDone = db.grammar.filter(g => store.hasCard(sentenceCardIds(g)[0])).length;
+  const lessonsDone = db.grammar.filter(g => store.isLessonDone(g.id)).length;
   const progress = h('section', { class: 'card' },
     h('div', { class: 'card__head' }, h('h2', { class: 'h2' }, '쌓아 올린 것'), h('a', { class: 'card__aside', href: '#/stats' }, '기록 자세히 →')),
     h('div', { class: 'meters' },
@@ -76,6 +93,8 @@ export default function home() {
       progressBar(count(isType('vocab')), db.vocab.length, { label: '어휘', tone: 'ai' }),
       progressBar(count(isType('kanji')), db.kanji.length, { label: '한자', tone: 'ai' }),
       progressBar(lessonsDone, db.grammar.length, { label: '문법 레슨', tone: 'matcha' })));
+
+  if (!started && !store.settings().welcomed) setTimeout(welcome, 350);
 
   return h('div', { class: 'page page--home' },
     h('header', { class: 'masthead' },

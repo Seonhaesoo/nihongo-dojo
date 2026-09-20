@@ -549,3 +549,10 @@ a.step[href]:hover { border-color: var(--ink); transform: translateX(3px); }
 #toast-root { position: fixed; z-index: 100; left: 0; right: 0; bottom: calc(92px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; align-items: center; gap: 8px; pointer-events: none; }
 .toast { padding: 10px 18px; background: var(--ink); color: var(--on-ink); border-radius: var(--radius); font-size: 14px; font-weight: 600; box-shadow: 3px 3px 0 var(--shu); animation: rise .25s both; transition: opacity .35s, transform .35s; }
 .toast.is-out { opacity: 0; transform: translateY(8px); }
+
+/* 첫 실행 안내 */
+.welcome { display: grid; gap: 18px; padding-top: 6px; }
+.welcome .h1 { font-size: clamp(24px, 6vw, 30px); }
+.welcome .steps-guide { margin: 0; font-size: 14.5px; line-height: 1.75; }
+.welcome__sound { display: grid; gap: 8px; justify-items: start; }
+.welcome__voice { font-size: 13px; color: var(--ink-2); min-height: 1.4em; }

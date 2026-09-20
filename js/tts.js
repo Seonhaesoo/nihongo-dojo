@@ -37,6 +37,7 @@ export function speak(text, opts = {}) {
   if (!synth || !text) return Promise.resolve();
   const clean = stripMarkup(text).replace(/[〜～]/g, '').replace(/（　）/g, '、').trim();
   if (!clean) return Promise.resolve();
+  const busy = synth.speaking || synth.pending;
   if (!opts.queue) synth.cancel();
   return new Promise(resolve => {
     const u = new SpeechSynthesisUtterance(clean);
@@ -46,7 +47,7 @@ export function speak(text, opts = {}) {
     u.rate = opts.rate ?? settings().ttsRate ?? 0.9;
     u.pitch = opts.pitch ?? 1;
     u.onend = u.onerror = () => resolve();
-    synth.speak(u);
+    if (busy && !opts.queue) setTimeout(() => synth.speak(u), 70); else synth.speak(u);
     // 일부 브라우저는 onend를 부르지 않는 경우가 있어 안전장치를 둔다
     setTimeout(resolve, Math.max(4000, clean.length * 450));
   });

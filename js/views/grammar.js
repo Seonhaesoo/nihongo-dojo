@@ -1,6 +1,6 @@
 // 문법 (文法): 레슨 목록과 레슨 본문 + 확인 퀴즈
 import { h, clear, ruby, rich, shuffle } from '../util.js';
-import { db, sentenceCardIds, weekMeta, dayMeta } from '../data.js';
+import { db, sentenceCardIds, weekMeta, dayMeta, isSoundLesson } from '../data.js';
 import * as store from '../store.js';
 import { pageHead, exampleBlock, stamp, emptyState } from '../ui.js';
 import { runQuiz, resultView, grammarQuestion } from '../quiz.js';
@@ -21,9 +21,9 @@ export function grammarList() {
     [...byWeek.entries()].map(([w, list]) => h('section', { class: 'card' },
       h('div', { class: 'card__head' }, h('h2', { class: 'h2' }, `${w}주차 · ${weekMeta(w)?.title || ''}`)),
       h('ul', { class: 'rows' }, list.map(g => {
-        const done = store.hasCard(sentenceCardIds(g)[0]);
+        const done = store.isLessonDone(g.id);
         return h('li', null, h('a', { class: 'row', href: `#/grammar/${g.id}` },
-          h('span', { class: 'row__num' }, g.id.slice(1)),
+          h('span', { class: 'row__num' }, isSoundLesson(g) ? '音' : g.id.slice(1)),
           h('span', { class: 'row__text' }, h('span', { class: 'row__title jp', html: ruby(g.title) }), h('span', { class: 'row__sub' }, g.titleKo)),
           done ? stamp('済', { size: 'xs' }) : h('span', { class: 'row__aside' }, `Day ${g.day}`)));
       })))));
@@ -49,7 +49,7 @@ export function grammarLesson([id], query = {}) {
   function lesson() {
     document.body.classList.remove('is-focus');
     clear(root).append(h('div', { class: 'page page--lesson' },
-      pageHead({ back, kicker: `文法 ${g.id.slice(1)} · Day ${g.day}`, title: g.title, tate: '文法', lead: g.titleKo }),
+      pageHead({ back, kicker: `${isSoundLesson(g) ? '発音' : '文法'} ${g.id.slice(1)} · Day ${g.day}`, title: g.title, tate: isSoundLesson(g) ? '発音' : '文法', lead: g.titleKo }),
       h('p', { class: 'lesson__summary', html: rich(g.summary) }),
       g.points.map((pt, i) => h('section', { class: 'point' },
         h('div', { class: 'point__head' }, h('span', { class: 'point__num' }, String(i + 1)),
@@ -79,12 +79,13 @@ export function grammarLesson([id], query = {}) {
         const pass = score >= PASS;
         let completed = false;
         if (pass) {
+          store.markLesson(g.id, score);
           store.addCards(sentenceCardIds(g));
           if (dayCtx) { store.markStep(dayCtx, `grammar:${g.id}`, { score }); completed = checkDayComplete(dayCtx); }
         }
         clear(holder).append(resultView({
           right, total, passMark: PASS, title: g.titleKo,
-          note: pass ? '이 레슨의 대표 예문이 복습 카드에 추가되었습니다.' : '레슨을 다시 읽고 도전해 보세요. 75점 이상이면 통과입니다.',
+          note: pass ? (isSoundLesson(g) ? '규칙을 이해했으니 이제 글자를 익힐 차례입니다.' : '이 레슨의 대표 예문이 복습 카드에 추가되었습니다.') : '레슨을 다시 읽고 도전해 보세요. 75점 이상이면 통과입니다.',
           onRetry: pass ? quiz : lesson,
           onContinue: () => { document.body.classList.remove('is-focus'); location.hash = back; },
           continueText: completed ? 'Day 완료! 돌아가기' : dayCtx ? '다음 단계로' : '목록으로'

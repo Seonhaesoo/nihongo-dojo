@@ -52,7 +52,7 @@ export default function day([nStr]) {
     if (!(await confirmDialog(`Day ${n}을(를) 이미 아는 내용으로 보고 완료 처리할까요? 이날의 글자·단어·한자가 복습 카드에 추가됩니다.`, { okText: '완료 처리' }))) return;
     const it = dayItems(n);
     store.addCards([...it.kana, ...it.vocab, ...it.kanji].map(x => x.id));
-    it.grammar.forEach(g => store.addCards(sentenceCardIds(g)));
+    it.grammar.forEach(g => { store.markLesson(g.id, 0); store.addCards(sentenceCardIds(g)); });
     steps.forEach(s => store.markStep(n, s.key, { skipped: true }));
     store.completeDay(n);
     toast(`Day ${n} 완료 처리했습니다`);

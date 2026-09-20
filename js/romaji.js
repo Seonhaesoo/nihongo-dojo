@@ -7,7 +7,7 @@ const TABLE = {
   na: 'な', ni: 'に', nu: 'ぬ', ne: 'ね', no: 'の',
   ha: 'は', hi: 'ひ', fu: 'ふ', hu: 'ふ', he: 'へ', ho: 'ほ', ba: 'ば', bi: 'び', bu: 'ぶ', be: 'べ', bo: 'ぼ', pa: 'ぱ', pi: 'ぴ', pu: 'ぷ', pe: 'ぺ', po: 'ぽ',
   ma: 'ま', mi: 'み', mu: 'む', me: 'め', mo: 'も', ya: 'や', yu: 'ゆ', yo: 'よ',
-  ra: 'ら', ri: 'り', ru: 'る', re: 'れ', ro: 'ろ', wa: 'わ', wo: 'を', nn: 'ん',
+  ra: 'ら', ri: 'り', ru: 'る', re: 'れ', ro: 'ろ', wa: 'わ', wo: 'を',
   kya: 'きゃ', kyu: 'きゅ', kyo: 'きょ', gya: 'ぎゃ', gyu: 'ぎゅ', gyo: 'ぎょ',
   sha: 'しゃ', shu: 'しゅ', sho: 'しょ', sya: 'しゃ', syu: 'しゅ', syo: 'しょ',
   ja: 'じゃ', ju: 'じゅ', jo: 'じょ', jya: 'じゃ', jyu: 'じゅ', jyo: 'じょ', zya: 'じゃ', zyu: 'じゅ', zyo: 'じょ',
@@ -26,15 +26,21 @@ export function toHiragana(input) {
   while (i < s.length) {
     const ch = s[i];
     // 촉음: 같은 자음 두 번 (nn 제외)
-    if (/[bcdfghjkmpqrstvwxyz]/.test(ch) && s[i + 1] === ch) { out += 'っ'; i++; continue; }
+    if (/[bcdfghjkmpqrstvwxz]/.test(ch) && s[i + 1] === ch) { out += 'っ'; i++; continue; }
     if (ch === 't' && s.slice(i + 1, i + 3) === 'ch') { out += 'っ'; i++; continue; }
+    // ん: "nn"+모음은 ん+な행(konnichiwa → こんにちわ), 자음 앞·단어 끝의 n도 ん
+    if (ch === 'n') {
+      const a = s[i + 1], b = s[i + 2];
+      if (a === 'n') { out += 'ん'; i += b && /[aiueoy]/.test(b) ? 1 : 2; continue; }
+      if (a === "'") { out += 'ん'; i += 2; continue; }
+      if (!a || !/[aiueoy]/.test(a)) { out += 'ん'; i += 1; continue; }
+    }
     let matched = false;
     for (const len of [3, 2, 1]) {
       const part = s.slice(i, i + len);
       if (TABLE[part]) { out += TABLE[part]; i += len; matched = true; break; }
     }
     if (matched) continue;
-    if (ch === 'n') { out += 'ん'; i += s[i + 1] === "'" ? 2 : 1; continue; }
     out += ch; i++;
   }
   return out;
@@ -42,6 +48,6 @@ export function toHiragana(input) {
 
 /** 입력(로마자 또는 가나)을 비교용 히라가나로 정규화 */
 export function normalizeKana(input) {
-  const hira = toHiragana(String(input).trim().replace(/\s+/g, ''));
+  const hira = toHiragana(String(input).replace(/[\s、。・,.!?！？]+/g, ''));
   return hira.replace(/[ァ-ヶ]/g, c => String.fromCharCode(c.charCodeAt(0) - 0x60)).replace(/[〜～]/g, '');
 }

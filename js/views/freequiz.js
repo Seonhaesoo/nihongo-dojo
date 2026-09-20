@@ -13,7 +13,7 @@ export default function freequiz() {
   let scope = 'learned', count = 20, typing = false;
 
   function pool() {
-    const learnedGrammar = db.grammar.filter(g => store.hasCard(`${g.id}#0`));
+    const learnedGrammar = db.grammar.filter(g => store.isLessonDone(g.id));
     const weak = new Set(store.weakItems(60));
     const pick = list => scope === 'all' ? list : scope === 'weak' ? list.filter(x => weak.has(x.id)) : list.filter(x => store.hasCard(x.id));
     const items = ['kana', 'vocab', 'kanji'].filter(t => types.has(t)).flatMap(t => pick(db[t]));

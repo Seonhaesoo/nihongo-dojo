@@ -29,7 +29,7 @@ const ROUTES = [
   [/^\/test\/(\d+)$/, test, 'focus'],
   [/^\/review$/, review, 'focus'],
   [/^\/grammar$/, grammarList, 'lib'],
-  [/^\/grammar\/(g\d+)$/, grammarLesson, 'lib'],
+  [/^\/grammar\/([gk]\d+)$/, grammarLesson, 'lib'],
   [/^\/lib$/, library, 'lib'],
   [/^\/kana$/, kanaChart, 'lib'],
   [/^\/vocab$/, vocabList, 'lib'],

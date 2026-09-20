@@ -13,7 +13,9 @@ function practiceQuestions(items, kind, n) {
   const upTo = itemsUpTo(n, kind);
   if (kind === 'kana') {
     const pool = upTo.length >= 8 ? upTo : db.kana;
-    return [...items.map(k => kanaQuestion(k, 'k2r', pool)), ...shuffle(items).map(k => kanaQuestion(k, Math.random() < 0.5 ? 'listen' : 'r2k', pool))];
+    // 탁음·요음처럼 규칙으로 읽는 글자는 한 번씩만 확인하고 넘어간다 (지루함 방지)
+    const second = items.every(k => k.group !== 'basic') ? shuffle(items).slice(0, Math.ceil(items.length / 2)) : shuffle(items);
+    return [...items.map(k => kanaQuestion(k, 'k2r', pool)), ...second.map(k => kanaQuestion(k, Math.random() < 0.5 ? 'listen' : 'r2k', pool))];
   }
   if (kind === 'kanji') {
     const pool = upTo.length >= 8 ? upTo : db.kanji;
@@ -30,7 +32,7 @@ export default function learn([nStr, kind]) {
   const back = `#/day/${n}`;
   if (!items.length) { location.hash = back; return root; }
 
-  const groups = chunk(items, kind === 'kana' ? 5 : 6);
+  const groups = chunk(items, kind !== 'kana' ? 6 : items.every(k => k.group !== 'basic') ? 9 : 5);
   let gi = 0;
 
   function intro(idx) {
