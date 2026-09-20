@@ -31,7 +31,7 @@ export function grammarList() {
 
 function tableEl(t) {
   return h('figure', { class: 'tblwrap' },
-    h('figcaption', null, t.caption),
+    h('figcaption', { html: ruby(t.caption) }),
     h('div', { class: 'tblscroll' }, h('table', { class: 'tbl' },
       h('thead', null, h('tr', null, t.head.map(c => h('th', { html: ruby(c) })))),
       h('tbody', null, t.rows.map(r => h('tr', null, r.map((c, i) => h(i === 0 ? 'th' : 'td', { class: 'jp', html: rich(c || '') }))))))));
