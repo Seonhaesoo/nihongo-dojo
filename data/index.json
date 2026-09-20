@@ -1,0 +1,22 @@
+{
+ "kana": "data/kana.json",
+ "curriculum": "data/curriculum.json",
+ "kanji": "data/kanji.json",
+ "vocab": [
+  "data/vocab/00-basics.json",
+  "data/vocab/v1-d12-d25.json",
+  "data/vocab/v2-d26-d39.json",
+  "data/vocab/v3-d40-d53.json",
+  "data/vocab/v4-d54-d67.json",
+  "data/vocab/v5-d68-d81.json"
+ ],
+ "grammar": [
+  "data/grammar/g01-g11.json",
+  "data/grammar/g23-g33.json",
+  "data/grammar/g34-g43.json",
+  "data/grammar/g44-g53.json",
+  "data/grammar/k-sounds.json"
+ ],
+ "reading": "data/reading/reading.json",
+ "listening": "data/reading/listening.json"
+}

@@ -4,7 +4,7 @@
 //   node tools/validate.mjs data/vocab/a.json [...]  → 지정 파일만 검증
 // 규격은 docs/CONTENT_SPEC.md, 기준표는 tools/syllabus.json.
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
-import { join, resolve, relative, dirname } from 'node:path';
+import { join, resolve, relative, dirname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -346,9 +346,20 @@ if (isMain) {
     const allIds = [...seenIds.keys()];
     const gMissing = syllabus.grammar.map(g => g.id).filter(id => !seenIds.has(id));
     if (gMissing.length) warn('data/grammar', '$', `아직 없는 문법 레슨: ${gMissing.join(', ')}`);
+    // data/index.json이 실제 파일 목록과 맞는지
+    try {
+      const idx = JSON.parse(readFileSync(join(ROOT, 'data/index.json'), 'utf8'));
+      const listed = new Set([...idx.vocab, ...idx.grammar]);
+      const actual = files.map(f => relative(ROOT, f).split(sep).join('/')).filter(r => r.startsWith('data/vocab/') || r.startsWith('data/grammar/'));
+      const stale = actual.filter(r => !listed.has(r)).concat([...listed].filter(r => !actual.includes(r)));
+      if (stale.length) warn('data/index.json', '-', '목록이 실제 파일과 다릅니다. node tools/build-index.mjs 를 실행하세요: ' + stale.join(', '));
+    } catch {
+      warn('data/index.json', '-', '없음. node tools/build-index.mjs 를 실행하세요');
+    }
     const vDays = Object.keys(syllabus.vocab).filter(d => !allIds.some(id => id.startsWith(`v-d${String(d).padStart(2, '0')}-`)));
-    if (vDays.length) warn('data/vocab', '$', `아직 어휘가 없는 day: ${vDays.join(', ')}`);
+    if (vDays.length) warn('data/vocab', '-', `아직 어휘가 없는 day: ${vDays.join(', ')}`);
   }
-  console.log(`\n오류 ${errors}건, 경고 ${warnings}건`);
+  console.log(`
+오류 ${errors}건, 경고 ${warnings}건`);
   process.exit(errors ? 1 : 0);
 }

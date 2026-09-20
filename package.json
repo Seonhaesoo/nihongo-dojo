@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "validate": "node tools/validate.mjs"
+    "validate": "node tools/validate.mjs",
+    "index": "node tools/build-index.mjs",
+    "check": "node tools/build-index.mjs && node tools/validate.mjs"
   },
   "license": "MIT"
 }

@@ -1,13 +1,6 @@
 // 학습 데이터 로딩과 색인
-const FILES = {
-  kana: 'data/kana.json',
-  curriculum: 'data/curriculum.json',
-  vocab: ['data/vocab/00-basics.json', 'data/vocab/v1-d12-d25.json', 'data/vocab/v2-d26-d39.json', 'data/vocab/v3-d40-d53.json', 'data/vocab/v4-d54-d67.json', 'data/vocab/v5-d68-d81.json'],
-  kanji: 'data/kanji.json',
-  grammar: ['data/grammar/k-sounds.json', 'data/grammar/g01-g11.json', 'data/grammar/g12-g22.json', 'data/grammar/g23-g33.json', 'data/grammar/g34-g43.json', 'data/grammar/g44-g53.json'],
-  reading: 'data/reading/reading.json',
-  listening: 'data/reading/listening.json'
-};
+// 읽어 들일 파일 목록은 data/index.json에 있다 (tools/build-index.mjs가 생성)
+const INDEX = 'data/index.json';
 
 export const db = {
   kana: [], vocab: [], kanji: [], grammar: [], reading: [], listening: [],
@@ -42,6 +35,8 @@ function register(type, list) {
 }
 
 export async function loadAll() {
+  const FILES = await getJson(INDEX);
+  if (!FILES) throw new Error('data/index.json을 불러오지 못했습니다. 인터넷 연결을 확인하고 새로고침해 주세요.');
   const many = async urls => (await Promise.all(urls.map(getJson))).filter(Boolean).flat();
   const [kana, curriculum, vocab, kanji, grammar, reading, listening] = await Promise.all([
     getJson(FILES.kana), getJson(FILES.curriculum), many(FILES.vocab), getJson(FILES.kanji),

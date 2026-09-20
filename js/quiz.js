@@ -96,12 +96,19 @@ export function kanjiQuestion(k, mode, pool = db.kanji) {
 }
 
 // ───────── 문법 (레슨에 수록된 문항) ─────────
+/** 정답을 채운 문장을 읽어 준다. 한국어로 된 질문은 일본어 음성으로 읽을 수 없으므로 정답 보기만 읽는다. */
+function grammarSpeech(q) {
+  const answer = stripMarkup(q.choices[q.answer]);
+  const hangul = /[가-힣]/;
+  if (hangul.test(q.q)) return hangul.test(answer) ? null : answer;
+  return q.q.includes('（　）') ? q.q.replace('（　）', answer) : null;
+}
 export function grammarQuestion(q, lesson) {
   const itemId = lesson?.id;
   if (q.type === 'order') return { kind: 'order', itemId, label: '단어를 올바른 순서로 배열하세요', tokens: q.tokens, ko: q.ko, alts: q.alts || [], tag: lesson?.titleKo };
   return { kind: 'choice', itemId, label: '빈칸에 알맞은 것을 고르세요', tag: lesson?.titleKo,
     promptHtml: `<span class="quiz__sentence jp">${ruby(q.q)}</span>${q.ko ? `<span class="quiz__sub">${esc(q.ko)}</span>` : ''}`,
-    explainHtml: rich(q.explain), speak: q.q.includes('（　）') ? q.q.replace('（　）', stripMarkup(q.choices[q.answer])) : null, fixedOrder: true,
+    explainHtml: rich(q.explain), speak: grammarSpeech(q), fixedOrder: true,
     choices: q.choices.map((c, i) => ({ html: `<span class="jp">${ruby(c)}</span>`, correct: i === q.answer })) };
 }
 

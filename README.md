@@ -74,7 +74,8 @@ server.js               로컬 서버
 모든 학습 내용은 `data/`의 JSON입니다. 규격은 [docs/CONTENT_SPEC.md](docs/CONTENT_SPEC.md)를 따르고, 고친 뒤에는 검증기를 돌립니다.
 
 ```bash
-node tools/validate.mjs
+node tools/build-index.mjs   # 데이터 파일을 추가·삭제했을 때: 파일 목록(data/index.json) 갱신
+node tools/validate.mjs      # 규격 검증
 ```
 
 후리가나는 `{漢字|かんじ}` 형식으로 적고, 한자에는 예외 없이 읽기를 답니다.
