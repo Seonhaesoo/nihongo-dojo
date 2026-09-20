@@ -1,0 +1,12 @@
+{
+  "name": "nihongo-dojo",
+  "version": "1.0.0",
+  "description": "일본어 도장 — 한국인 완전 초보를 위한 12주 집중 일본어 학습 PWA",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "validate": "node tools/validate.mjs"
+  },
+  "license": "MIT"
+}

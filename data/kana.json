@@ -1,0 +1,3525 @@
+[
+ {
+  "id": "hi-a",
+  "kana": "あ",
+  "romaji": "a",
+  "ko": "아",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "a",
+  "col": 0,
+  "day": 1,
+  "word": {
+   "kana": "あい",
+   "ko": "사랑"
+  },
+  "confuse": [
+   "お"
+  ]
+ },
+ {
+  "id": "hi-i",
+  "kana": "い",
+  "romaji": "i",
+  "ko": "이",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "a",
+  "col": 1,
+  "day": 1,
+  "word": {
+   "kana": "いえ",
+   "ko": "집"
+  },
+  "confuse": [
+   "り"
+  ]
+ },
+ {
+  "id": "hi-u",
+  "kana": "う",
+  "romaji": "u",
+  "ko": "우",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "a",
+  "col": 2,
+  "day": 1,
+  "word": {
+   "kana": "うえ",
+   "ko": "위"
+  },
+  "confuse": [
+   "つ"
+  ],
+  "tip": "한국어 '우'처럼 입술을 둥글게 내밀지 않습니다. '우'와 '으'의 중간 소리입니다."
+ },
+ {
+  "id": "hi-e",
+  "kana": "え",
+  "romaji": "e",
+  "ko": "에",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "a",
+  "col": 3,
+  "day": 1,
+  "word": {
+   "kana": "いいえ",
+   "ko": "아니요"
+  }
+ },
+ {
+  "id": "hi-o",
+  "kana": "お",
+  "romaji": "o",
+  "ko": "오",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "a",
+  "col": 4,
+  "day": 1,
+  "word": {
+   "kana": "あお",
+   "ko": "파랑"
+  },
+  "confuse": [
+   "あ"
+  ]
+ },
+ {
+  "id": "hi-ka",
+  "kana": "か",
+  "romaji": "ka",
+  "ko": "카",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "k",
+  "col": 0,
+  "day": 1,
+  "word": {
+   "kana": "かお",
+   "ko": "얼굴"
+  },
+  "tip": "단어 첫머리에서는 ㄱ과 ㅋ의 중간, 단어 중간에서는 ㄲ에 가깝게 들립니다. か행 전체가 그렇습니다."
+ },
+ {
+  "id": "hi-ki",
+  "kana": "き",
+  "romaji": "ki",
+  "ko": "키",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "k",
+  "col": 1,
+  "day": 1,
+  "word": {
+   "kana": "えき",
+   "ko": "역"
+  },
+  "confuse": [
+   "さ",
+   "ち"
+  ]
+ },
+ {
+  "id": "hi-ku",
+  "kana": "く",
+  "romaji": "ku",
+  "ko": "쿠",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "k",
+  "col": 2,
+  "day": 1,
+  "word": {
+   "kana": "きく",
+   "ko": "듣다"
+  },
+  "confuse": [
+   "へ"
+  ]
+ },
+ {
+  "id": "hi-ke",
+  "kana": "け",
+  "romaji": "ke",
+  "ko": "케",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "k",
+  "col": 3,
+  "day": 1,
+  "word": {
+   "kana": "いけ",
+   "ko": "연못"
+  },
+  "confuse": [
+   "は",
+   "ほ"
+  ]
+ },
+ {
+  "id": "hi-ko",
+  "kana": "こ",
+  "romaji": "ko",
+  "ko": "코",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "k",
+  "col": 4,
+  "day": 1,
+  "word": {
+   "kana": "ここ",
+   "ko": "여기"
+  },
+  "confuse": [
+   "に",
+   "た"
+  ]
+ },
+ {
+  "id": "hi-sa",
+  "kana": "さ",
+  "romaji": "sa",
+  "ko": "사",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "s",
+  "col": 0,
+  "day": 1,
+  "word": {
+   "kana": "さけ",
+   "ko": "술"
+  },
+  "confuse": [
+   "き",
+   "ち"
+  ]
+ },
+ {
+  "id": "hi-shi",
+  "kana": "し",
+  "romaji": "shi",
+  "ko": "시",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "s",
+  "col": 1,
+  "day": 1,
+  "word": {
+   "kana": "しお",
+   "ko": "소금"
+  },
+  "confuse": [
+   "も"
+  ],
+  "tip": "'si'가 아니라 'shi'. 한국어 '시'와 거의 같습니다."
+ },
+ {
+  "id": "hi-su",
+  "kana": "す",
+  "romaji": "su",
+  "ko": "스",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "s",
+  "col": 2,
+  "day": 1,
+  "word": {
+   "kana": "すし",
+   "ko": "초밥"
+  },
+  "confuse": [
+   "む"
+  ],
+  "tip": "'수'보다 '스'에 가깝게, 입술을 내밀지 않고 발음합니다. です·ます의 す는 거의 'ㅅ'만 들립니다."
+ },
+ {
+  "id": "hi-se",
+  "kana": "せ",
+  "romaji": "se",
+  "ko": "세",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "s",
+  "col": 3,
+  "day": 1,
+  "word": {
+   "kana": "せかい",
+   "ko": "세계"
+  }
+ },
+ {
+  "id": "hi-so",
+  "kana": "そ",
+  "romaji": "so",
+  "ko": "소",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "s",
+  "col": 4,
+  "day": 1,
+  "word": {
+   "kana": "うそ",
+   "ko": "거짓말"
+  }
+ },
+ {
+  "id": "hi-ta",
+  "kana": "た",
+  "romaji": "ta",
+  "ko": "타",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "t",
+  "col": 0,
+  "day": 2,
+  "word": {
+   "kana": "たこ",
+   "ko": "문어"
+  },
+  "confuse": [
+   "こ",
+   "に"
+  ],
+  "tip": "단어 첫머리에서는 ㄷ과 ㅌ의 중간, 단어 중간에서는 ㄸ에 가깝게 들립니다."
+ },
+ {
+  "id": "hi-chi",
+  "kana": "ち",
+  "romaji": "chi",
+  "ko": "치",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "t",
+  "col": 1,
+  "day": 2,
+  "word": {
+   "kana": "ちかい",
+   "ko": "가깝다"
+  },
+  "confuse": [
+   "き",
+   "さ",
+   "ら"
+  ],
+  "tip": "'ti'가 아니라 'chi'. 한국어 '치'와 비슷합니다."
+ },
+ {
+  "id": "hi-tsu",
+  "kana": "つ",
+  "romaji": "tsu",
+  "ko": "츠",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "t",
+  "col": 2,
+  "day": 2,
+  "word": {
+   "kana": "つき",
+   "ko": "달"
+  },
+  "confuse": [
+   "う"
+  ],
+  "tip": "한국어에 없는 소리입니다. 혀끝을 윗니 뒤에 붙였다 떼면서 '츠'. '쓰'나 '추'가 되지 않게 주의하세요."
+ },
+ {
+  "id": "hi-te",
+  "kana": "て",
+  "romaji": "te",
+  "ko": "테",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "t",
+  "col": 3,
+  "day": 2,
+  "word": {
+   "kana": "て",
+   "ko": "손"
+  }
+ },
+ {
+  "id": "hi-to",
+  "kana": "と",
+  "romaji": "to",
+  "ko": "토",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "t",
+  "col": 4,
+  "day": 2,
+  "word": {
+   "kana": "とけい",
+   "ko": "시계"
+  }
+ },
+ {
+  "id": "hi-na",
+  "kana": "な",
+  "romaji": "na",
+  "ko": "나",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "n",
+  "col": 0,
+  "day": 2,
+  "word": {
+   "kana": "なつ",
+   "ko": "여름"
+  }
+ },
+ {
+  "id": "hi-ni",
+  "kana": "に",
+  "romaji": "ni",
+  "ko": "니",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "n",
+  "col": 1,
+  "day": 2,
+  "word": {
+   "kana": "にく",
+   "ko": "고기"
+  },
+  "confuse": [
+   "こ",
+   "た"
+  ]
+ },
+ {
+  "id": "hi-nu",
+  "kana": "ぬ",
+  "romaji": "nu",
+  "ko": "누",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "n",
+  "col": 2,
+  "day": 2,
+  "word": {
+   "kana": "いぬ",
+   "ko": "개"
+  },
+  "confuse": [
+   "め"
+  ]
+ },
+ {
+  "id": "hi-ne",
+  "kana": "ね",
+  "romaji": "ne",
+  "ko": "네",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "n",
+  "col": 3,
+  "day": 2,
+  "word": {
+   "kana": "ねこ",
+   "ko": "고양이"
+  },
+  "confuse": [
+   "れ",
+   "わ"
+  ]
+ },
+ {
+  "id": "hi-no",
+  "kana": "の",
+  "romaji": "no",
+  "ko": "노",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "n",
+  "col": 4,
+  "day": 2,
+  "word": {
+   "kana": "きのこ",
+   "ko": "버섯"
+  }
+ },
+ {
+  "id": "hi-ha",
+  "kana": "は",
+  "romaji": "ha",
+  "ko": "하",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "h",
+  "col": 0,
+  "day": 2,
+  "word": {
+   "kana": "はな",
+   "ko": "꽃"
+  },
+  "confuse": [
+   "け",
+   "ほ",
+   "ま"
+  ],
+  "tip": "조사로 쓰일 때는 [wa]로 읽습니다. (예: わたしは = 와타시와)"
+ },
+ {
+  "id": "hi-hi",
+  "kana": "ひ",
+  "romaji": "hi",
+  "ko": "히",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "h",
+  "col": 1,
+  "day": 2,
+  "word": {
+   "kana": "ひと",
+   "ko": "사람"
+  }
+ },
+ {
+  "id": "hi-fu",
+  "kana": "ふ",
+  "romaji": "fu",
+  "ko": "후",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "h",
+  "col": 2,
+  "day": 2,
+  "word": {
+   "kana": "ふね",
+   "ko": "배(선박)"
+  },
+  "tip": "영어 f도 한국어 '후'도 아닙니다. 촛불을 불듯 두 입술 사이로 바람을 내보냅니다."
+ },
+ {
+  "id": "hi-he",
+  "kana": "へ",
+  "romaji": "he",
+  "ko": "헤",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "h",
+  "col": 3,
+  "day": 2,
+  "word": {
+   "kana": "へた",
+   "ko": "서투름"
+  },
+  "confuse": [
+   "く"
+  ],
+  "tip": "조사로 쓰일 때는 [e]로 읽습니다. (예: がっこうへ = 각코-에)"
+ },
+ {
+  "id": "hi-ho",
+  "kana": "ほ",
+  "romaji": "ho",
+  "ko": "호",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "h",
+  "col": 4,
+  "day": 2,
+  "word": {
+   "kana": "ほし",
+   "ko": "별"
+  },
+  "confuse": [
+   "け",
+   "は",
+   "ま"
+  ]
+ },
+ {
+  "id": "hi-ma",
+  "kana": "ま",
+  "romaji": "ma",
+  "ko": "마",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "m",
+  "col": 0,
+  "day": 3,
+  "word": {
+   "kana": "まち",
+   "ko": "마을"
+  },
+  "confuse": [
+   "は",
+   "ほ"
+  ]
+ },
+ {
+  "id": "hi-mi",
+  "kana": "み",
+  "romaji": "mi",
+  "ko": "미",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "m",
+  "col": 1,
+  "day": 3,
+  "word": {
+   "kana": "みせ",
+   "ko": "가게"
+  }
+ },
+ {
+  "id": "hi-mu",
+  "kana": "む",
+  "romaji": "mu",
+  "ko": "무",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "m",
+  "col": 2,
+  "day": 3,
+  "word": {
+   "kana": "むし",
+   "ko": "벌레"
+  },
+  "confuse": [
+   "す"
+  ]
+ },
+ {
+  "id": "hi-me",
+  "kana": "め",
+  "romaji": "me",
+  "ko": "메",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "m",
+  "col": 3,
+  "day": 3,
+  "word": {
+   "kana": "あめ",
+   "ko": "비"
+  },
+  "confuse": [
+   "ぬ"
+  ]
+ },
+ {
+  "id": "hi-mo",
+  "kana": "も",
+  "romaji": "mo",
+  "ko": "모",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "m",
+  "col": 4,
+  "day": 3,
+  "word": {
+   "kana": "もの",
+   "ko": "물건"
+  },
+  "confuse": [
+   "し"
+  ]
+ },
+ {
+  "id": "hi-ya",
+  "kana": "や",
+  "romaji": "ya",
+  "ko": "야",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "y",
+  "col": 0,
+  "day": 3,
+  "word": {
+   "kana": "やま",
+   "ko": "산"
+  }
+ },
+ {
+  "id": "hi-yu",
+  "kana": "ゆ",
+  "romaji": "yu",
+  "ko": "유",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "y",
+  "col": 2,
+  "day": 3,
+  "word": {
+   "kana": "ゆき",
+   "ko": "눈(雪)"
+  }
+ },
+ {
+  "id": "hi-yo",
+  "kana": "よ",
+  "romaji": "yo",
+  "ko": "요",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "y",
+  "col": 4,
+  "day": 3,
+  "word": {
+   "kana": "よむ",
+   "ko": "읽다"
+  }
+ },
+ {
+  "id": "hi-ra",
+  "kana": "ら",
+  "romaji": "ra",
+  "ko": "라",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "r",
+  "col": 0,
+  "day": 3,
+  "word": {
+   "kana": "そら",
+   "ko": "하늘"
+  },
+  "confuse": [
+   "ち"
+  ],
+  "tip": "영어 r/l이 아니라 한국어 초성 ㄹ과 거의 같습니다. ら행 전체가 그렇습니다."
+ },
+ {
+  "id": "hi-ri",
+  "kana": "り",
+  "romaji": "ri",
+  "ko": "리",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "r",
+  "col": 1,
+  "day": 3,
+  "word": {
+   "kana": "とり",
+   "ko": "새"
+  },
+  "confuse": [
+   "い"
+  ]
+ },
+ {
+  "id": "hi-ru",
+  "kana": "る",
+  "romaji": "ru",
+  "ko": "루",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "r",
+  "col": 2,
+  "day": 3,
+  "word": {
+   "kana": "はる",
+   "ko": "봄"
+  },
+  "confuse": [
+   "ろ"
+  ]
+ },
+ {
+  "id": "hi-re",
+  "kana": "れ",
+  "romaji": "re",
+  "ko": "레",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "r",
+  "col": 3,
+  "day": 3,
+  "word": {
+   "kana": "これ",
+   "ko": "이것"
+  },
+  "confuse": [
+   "ね",
+   "わ"
+  ]
+ },
+ {
+  "id": "hi-ro",
+  "kana": "ろ",
+  "romaji": "ro",
+  "ko": "로",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "r",
+  "col": 4,
+  "day": 3,
+  "word": {
+   "kana": "しろ",
+   "ko": "흰색"
+  },
+  "confuse": [
+   "る"
+  ]
+ },
+ {
+  "id": "hi-wa",
+  "kana": "わ",
+  "romaji": "wa",
+  "ko": "와",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "w",
+  "col": 0,
+  "day": 3,
+  "word": {
+   "kana": "わたし",
+   "ko": "나, 저"
+  },
+  "confuse": [
+   "ね",
+   "れ"
+  ]
+ },
+ {
+  "id": "hi-wo",
+  "kana": "を",
+  "romaji": "wo",
+  "ko": "오",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "w",
+  "col": 4,
+  "day": 3,
+  "word": {
+   "kana": "てをあらう",
+   "ko": "손을 씻다"
+  },
+  "tip": "현대어에서는 목적격 조사(을/를)로만 쓰이고, 발음은 お와 똑같은 [o]입니다."
+ },
+ {
+  "id": "hi-n",
+  "kana": "ん",
+  "romaji": "n",
+  "ko": "응",
+  "script": "hiragana",
+  "group": "basic",
+  "row": "nn",
+  "col": 0,
+  "day": 3,
+  "word": {
+   "kana": "ほん",
+   "ko": "책"
+  },
+  "tip": "뒤에 오는 소리에 따라 ㄴ·ㅁ·ㅇ으로 변하는 받침 소리입니다. (さんぽ=삼포, ほんと=혼토, まんが=망가)"
+ },
+ {
+  "id": "hi-ga",
+  "kana": "が",
+  "romaji": "ga",
+  "ko": "가",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 0,
+  "day": 4,
+  "word": {
+   "kana": "がくせい",
+   "ko": "학생"
+  },
+  "tip": "목에서 울리는 유성음 g입니다. 단어 첫머리에서 한국어 '가'는 무성음에 가까우므로, 앞에 '응'을 살짝 넣는 느낌으로 울려 주세요."
+ },
+ {
+  "id": "hi-gi",
+  "kana": "ぎ",
+  "romaji": "gi",
+  "ko": "기",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 1,
+  "day": 4,
+  "word": {
+   "kana": "ぎんこう",
+   "ko": "은행"
+  }
+ },
+ {
+  "id": "hi-gu",
+  "kana": "ぐ",
+  "romaji": "gu",
+  "ko": "구",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 2,
+  "day": 4,
+  "word": {
+   "kana": "かぐ",
+   "ko": "가구"
+  }
+ },
+ {
+  "id": "hi-ge",
+  "kana": "げ",
+  "romaji": "ge",
+  "ko": "게",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 3,
+  "day": 4,
+  "word": {
+   "kana": "げんき",
+   "ko": "건강함"
+  }
+ },
+ {
+  "id": "hi-go",
+  "kana": "ご",
+  "romaji": "go",
+  "ko": "고",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 4,
+  "day": 4,
+  "word": {
+   "kana": "ごはん",
+   "ko": "밥"
+  }
+ },
+ {
+  "id": "hi-za",
+  "kana": "ざ",
+  "romaji": "za",
+  "ko": "자",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 0,
+  "day": 4,
+  "word": {
+   "kana": "ざっし",
+   "ko": "잡지"
+  },
+  "tip": "한국어에 없는 유성음 [z]입니다. '자'가 아니라 영어 zoo의 z처럼 혀끝을 떨어 주세요. ざ·ず·ぜ·ぞ가 모두 그렇습니다."
+ },
+ {
+  "id": "hi-ji",
+  "kana": "じ",
+  "romaji": "ji",
+  "ko": "지",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 1,
+  "day": 4,
+  "word": {
+   "kana": "じかん",
+   "ko": "시간"
+  },
+  "tip": "'지'와 비슷하지만 성대를 울리는 유성음입니다."
+ },
+ {
+  "id": "hi-zu",
+  "kana": "ず",
+  "romaji": "zu",
+  "ko": "즈",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 2,
+  "day": 4,
+  "word": {
+   "kana": "みず",
+   "ko": "물"
+  }
+ },
+ {
+  "id": "hi-ze",
+  "kana": "ぜ",
+  "romaji": "ze",
+  "ko": "제",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 3,
+  "day": 4,
+  "word": {
+   "kana": "かぜ",
+   "ko": "바람"
+  }
+ },
+ {
+  "id": "hi-zo",
+  "kana": "ぞ",
+  "romaji": "zo",
+  "ko": "조",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 4,
+  "day": 4,
+  "word": {
+   "kana": "かぞく",
+   "ko": "가족"
+  }
+ },
+ {
+  "id": "hi-da",
+  "kana": "だ",
+  "romaji": "da",
+  "ko": "다",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 0,
+  "day": 4,
+  "word": {
+   "kana": "だいがく",
+   "ko": "대학"
+  },
+  "tip": "성대를 울리는 유성음 d입니다. 단어 첫머리의 한국어 '다'보다 더 울리게 발음합니다."
+ },
+ {
+  "id": "hi-di",
+  "kana": "ぢ",
+  "romaji": "ji",
+  "ko": "지",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 1,
+  "day": 4,
+  "word": {
+   "kana": "はなぢ",
+   "ko": "코피"
+  },
+  "tip": "じ와 발음이 같습니다. 'はなぢ(코피)'처럼 극히 일부 단어에만 쓰입니다."
+ },
+ {
+  "id": "hi-du",
+  "kana": "づ",
+  "romaji": "zu",
+  "ko": "즈",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 2,
+  "day": 4,
+  "word": {
+   "kana": "つづく",
+   "ko": "계속되다"
+  },
+  "tip": "ず와 발음이 같습니다. 'つづく(계속되다)'처럼 일부 단어에만 쓰입니다."
+ },
+ {
+  "id": "hi-de",
+  "kana": "で",
+  "romaji": "de",
+  "ko": "데",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 3,
+  "day": 4,
+  "word": {
+   "kana": "でんわ",
+   "ko": "전화"
+  }
+ },
+ {
+  "id": "hi-do",
+  "kana": "ど",
+  "romaji": "do",
+  "ko": "도",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 4,
+  "day": 4,
+  "word": {
+   "kana": "どこ",
+   "ko": "어디"
+  }
+ },
+ {
+  "id": "hi-ba",
+  "kana": "ば",
+  "romaji": "ba",
+  "ko": "바",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 0,
+  "day": 4,
+  "word": {
+   "kana": "ばん",
+   "ko": "밤, 저녁"
+  },
+  "tip": "성대를 울리는 유성음 b입니다. 단어 첫머리의 한국어 '바'보다 더 울리게 발음합니다."
+ },
+ {
+  "id": "hi-bi",
+  "kana": "び",
+  "romaji": "bi",
+  "ko": "비",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 1,
+  "day": 4,
+  "word": {
+   "kana": "えび",
+   "ko": "새우"
+  }
+ },
+ {
+  "id": "hi-bu",
+  "kana": "ぶ",
+  "romaji": "bu",
+  "ko": "부",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 2,
+  "day": 4,
+  "word": {
+   "kana": "ぶた",
+   "ko": "돼지"
+  }
+ },
+ {
+  "id": "hi-be",
+  "kana": "べ",
+  "romaji": "be",
+  "ko": "베",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 3,
+  "day": 4,
+  "word": {
+   "kana": "たべる",
+   "ko": "먹다"
+  }
+ },
+ {
+  "id": "hi-bo",
+  "kana": "ぼ",
+  "romaji": "bo",
+  "ko": "보",
+  "script": "hiragana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 4,
+  "day": 4,
+  "word": {
+   "kana": "ぼうし",
+   "ko": "모자"
+  }
+ },
+ {
+  "id": "hi-pa",
+  "kana": "ぱ",
+  "romaji": "pa",
+  "ko": "파",
+  "script": "hiragana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 0,
+  "day": 4,
+  "word": {
+   "kana": "かんぱい",
+   "ko": "건배"
+  },
+  "tip": "한국어 'ㅍ'보다 숨을 약하게, 'ㅃ'과 'ㅍ'의 중간 정도로 발음합니다."
+ },
+ {
+  "id": "hi-pi",
+  "kana": "ぴ",
+  "romaji": "pi",
+  "ko": "피",
+  "script": "hiragana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 1,
+  "day": 4,
+  "word": {
+   "kana": "えんぴつ",
+   "ko": "연필"
+  }
+ },
+ {
+  "id": "hi-pu",
+  "kana": "ぷ",
+  "romaji": "pu",
+  "ko": "푸",
+  "script": "hiragana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 2,
+  "day": 4,
+  "word": {
+   "kana": "てんぷら",
+   "ko": "튀김"
+  }
+ },
+ {
+  "id": "hi-pe",
+  "kana": "ぺ",
+  "romaji": "pe",
+  "ko": "페",
+  "script": "hiragana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 3,
+  "day": 4,
+  "word": {
+   "kana": "ぺらぺら",
+   "ko": "술술(유창하게)"
+  }
+ },
+ {
+  "id": "hi-po",
+  "kana": "ぽ",
+  "romaji": "po",
+  "ko": "포",
+  "script": "hiragana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 4,
+  "day": 4,
+  "word": {
+   "kana": "さんぽ",
+   "ko": "산책"
+  }
+ },
+ {
+  "id": "hi-kya",
+  "kana": "きゃ",
+  "romaji": "kya",
+  "ko": "캬",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ky",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "きゃく",
+   "ko": "손님"
+  },
+  "tip": "き에 작은 ゃ를 붙여 한 박자로 읽습니다. 큰 や를 쓴 きや(키야, 두 박자)와 다릅니다."
+ },
+ {
+  "id": "hi-kyu",
+  "kana": "きゅ",
+  "romaji": "kyu",
+  "ko": "큐",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ky",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "きゅう",
+   "ko": "9, 아홉"
+  }
+ },
+ {
+  "id": "hi-kyo",
+  "kana": "きょ",
+  "romaji": "kyo",
+  "ko": "쿄",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ky",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "きょう",
+   "ko": "오늘"
+  }
+ },
+ {
+  "id": "hi-sha",
+  "kana": "しゃ",
+  "romaji": "sha",
+  "ko": "샤",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "sh",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "かいしゃ",
+   "ko": "회사"
+  }
+ },
+ {
+  "id": "hi-shu",
+  "kana": "しゅ",
+  "romaji": "shu",
+  "ko": "슈",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "sh",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "しゅみ",
+   "ko": "취미"
+  }
+ },
+ {
+  "id": "hi-sho",
+  "kana": "しょ",
+  "romaji": "sho",
+  "ko": "쇼",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "sh",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "じしょ",
+   "ko": "사전"
+  }
+ },
+ {
+  "id": "hi-cha",
+  "kana": "ちゃ",
+  "romaji": "cha",
+  "ko": "차",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ch",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "おちゃ",
+   "ko": "차(茶)"
+  },
+  "tip": "표기는 '차'에 가깝습니다. ちゃ·ちゅ·ちょ = cha·chu·cho."
+ },
+ {
+  "id": "hi-chu",
+  "kana": "ちゅ",
+  "romaji": "chu",
+  "ko": "추",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ch",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "ちゅうい",
+   "ko": "주의"
+  }
+ },
+ {
+  "id": "hi-cho",
+  "kana": "ちょ",
+  "romaji": "cho",
+  "ko": "초",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ch",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "ちょっと",
+   "ko": "조금, 잠깐"
+  }
+ },
+ {
+  "id": "hi-nya",
+  "kana": "にゃ",
+  "romaji": "nya",
+  "ko": "냐",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ny",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "にゃあ",
+   "ko": "야옹"
+  }
+ },
+ {
+  "id": "hi-nyu",
+  "kana": "にゅ",
+  "romaji": "nyu",
+  "ko": "뉴",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ny",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "にゅういん",
+   "ko": "입원"
+  }
+ },
+ {
+  "id": "hi-nyo",
+  "kana": "にょ",
+  "romaji": "nyo",
+  "ko": "뇨",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ny",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "にょろにょろ",
+   "ko": "꿈틀꿈틀"
+  }
+ },
+ {
+  "id": "hi-hya",
+  "kana": "ひゃ",
+  "romaji": "hya",
+  "ko": "햐",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "hy",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "ひゃく",
+   "ko": "100, 백"
+  }
+ },
+ {
+  "id": "hi-hyu",
+  "kana": "ひゅ",
+  "romaji": "hyu",
+  "ko": "휴",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "hy",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "ひゅうひゅう",
+   "ko": "휙휙(바람 소리)"
+  }
+ },
+ {
+  "id": "hi-hyo",
+  "kana": "ひょ",
+  "romaji": "hyo",
+  "ko": "효",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "hy",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "ひょう",
+   "ko": "표(表)"
+  }
+ },
+ {
+  "id": "hi-mya",
+  "kana": "みゃ",
+  "romaji": "mya",
+  "ko": "먀",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "my",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "みゃく",
+   "ko": "맥박"
+  }
+ },
+ {
+  "id": "hi-myu",
+  "kana": "みゅ",
+  "romaji": "myu",
+  "ko": "뮤",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "my",
+  "col": 1,
+  "day": 5,
+  "rare": "거의 쓰이지 않음"
+ },
+ {
+  "id": "hi-myo",
+  "kana": "みょ",
+  "romaji": "myo",
+  "ko": "묘",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "my",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "みょうじ",
+   "ko": "성씨"
+  }
+ },
+ {
+  "id": "hi-rya",
+  "kana": "りゃ",
+  "romaji": "rya",
+  "ko": "랴",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ry",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "りゃく",
+   "ko": "생략"
+  }
+ },
+ {
+  "id": "hi-ryu",
+  "kana": "りゅ",
+  "romaji": "ryu",
+  "ko": "류",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ry",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "りゅうがく",
+   "ko": "유학"
+  }
+ },
+ {
+  "id": "hi-ryo",
+  "kana": "りょ",
+  "romaji": "ryo",
+  "ko": "료",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "ry",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "りょこう",
+   "ko": "여행"
+  }
+ },
+ {
+  "id": "hi-gya",
+  "kana": "ぎゃ",
+  "romaji": "gya",
+  "ko": "갸",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "gy",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "ぎゃく",
+   "ko": "반대, 거꾸로"
+  }
+ },
+ {
+  "id": "hi-gyu",
+  "kana": "ぎゅ",
+  "romaji": "gyu",
+  "ko": "규",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "gy",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "ぎゅうにゅう",
+   "ko": "우유"
+  }
+ },
+ {
+  "id": "hi-gyo",
+  "kana": "ぎょ",
+  "romaji": "gyo",
+  "ko": "교",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "gy",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "きんぎょ",
+   "ko": "금붕어"
+  }
+ },
+ {
+  "id": "hi-ja",
+  "kana": "じゃ",
+  "romaji": "ja",
+  "ko": "자",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "j",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "じゃあ",
+   "ko": "그럼"
+  },
+  "tip": "じゃ·じゅ·じょ = ja·ju·jo. 유성음으로 울려 줍니다."
+ },
+ {
+  "id": "hi-ju",
+  "kana": "じゅ",
+  "romaji": "ju",
+  "ko": "주",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "j",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "じゅう",
+   "ko": "10, 열"
+  }
+ },
+ {
+  "id": "hi-jo",
+  "kana": "じょ",
+  "romaji": "jo",
+  "ko": "조",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "j",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "じょうず",
+   "ko": "잘함"
+  }
+ },
+ {
+  "id": "hi-bya",
+  "kana": "びゃ",
+  "romaji": "bya",
+  "ko": "뱌",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "by",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "さんびゃく",
+   "ko": "300, 삼백"
+  }
+ },
+ {
+  "id": "hi-byu",
+  "kana": "びゅ",
+  "romaji": "byu",
+  "ko": "뷰",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "by",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "びゅうびゅう",
+   "ko": "쌩쌩(바람 소리)"
+  }
+ },
+ {
+  "id": "hi-byo",
+  "kana": "びょ",
+  "romaji": "byo",
+  "ko": "뵤",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "by",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "びょういん",
+   "ko": "병원"
+  }
+ },
+ {
+  "id": "hi-pya",
+  "kana": "ぴゃ",
+  "romaji": "pya",
+  "ko": "퍄",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "py",
+  "col": 0,
+  "day": 5,
+  "word": {
+   "kana": "ろっぴゃく",
+   "ko": "600, 육백"
+  }
+ },
+ {
+  "id": "hi-pyu",
+  "kana": "ぴゅ",
+  "romaji": "pyu",
+  "ko": "퓨",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "py",
+  "col": 1,
+  "day": 5,
+  "word": {
+   "kana": "ぴゅう",
+   "ko": "휙"
+  }
+ },
+ {
+  "id": "hi-pyo",
+  "kana": "ぴょ",
+  "romaji": "pyo",
+  "ko": "표",
+  "script": "hiragana",
+  "group": "yoon",
+  "row": "py",
+  "col": 2,
+  "day": 5,
+  "word": {
+   "kana": "はっぴょう",
+   "ko": "발표"
+  }
+ },
+ {
+  "id": "ka-a",
+  "kana": "ア",
+  "romaji": "a",
+  "ko": "아",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a",
+  "col": 0,
+  "day": 8,
+  "word": {
+   "kana": "アイス",
+   "ko": "아이스크림"
+  },
+  "confuse": [
+   "マ"
+  ]
+ },
+ {
+  "id": "ka-i",
+  "kana": "イ",
+  "romaji": "i",
+  "ko": "이",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a",
+  "col": 1,
+  "day": 8,
+  "word": {
+   "kana": "イヤホン",
+   "ko": "이어폰"
+  }
+ },
+ {
+  "id": "ka-u",
+  "kana": "ウ",
+  "romaji": "u",
+  "ko": "우",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a",
+  "col": 2,
+  "day": 8,
+  "word": {
+   "kana": "ソウル",
+   "ko": "서울"
+  },
+  "confuse": [
+   "ワ",
+   "フ"
+  ],
+  "tip": "한국어 '우'처럼 입술을 둥글게 내밀지 않습니다. '우'와 '으'의 중간 소리입니다."
+ },
+ {
+  "id": "ka-e",
+  "kana": "エ",
+  "romaji": "e",
+  "ko": "에",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a",
+  "col": 3,
+  "day": 8,
+  "word": {
+   "kana": "エアコン",
+   "ko": "에어컨"
+  }
+ },
+ {
+  "id": "ka-o",
+  "kana": "オ",
+  "romaji": "o",
+  "ko": "오",
+  "script": "katakana",
+  "group": "basic",
+  "row": "a",
+  "col": 4,
+  "day": 8,
+  "word": {
+   "kana": "オレンジ",
+   "ko": "오렌지"
+  },
+  "confuse": [
+   "ホ"
+  ]
+ },
+ {
+  "id": "ka-ka",
+  "kana": "カ",
+  "romaji": "ka",
+  "ko": "카",
+  "script": "katakana",
+  "group": "basic",
+  "row": "k",
+  "col": 0,
+  "day": 8,
+  "word": {
+   "kana": "カメラ",
+   "ko": "카메라"
+  },
+  "tip": "단어 첫머리에서는 ㄱ과 ㅋ의 중간, 단어 중간에서는 ㄲ에 가깝게 들립니다. か행 전체가 그렇습니다."
+ },
+ {
+  "id": "ka-ki",
+  "kana": "キ",
+  "romaji": "ki",
+  "ko": "키",
+  "script": "katakana",
+  "group": "basic",
+  "row": "k",
+  "col": 1,
+  "day": 8,
+  "word": {
+   "kana": "キムチ",
+   "ko": "김치"
+  }
+ },
+ {
+  "id": "ka-ku",
+  "kana": "ク",
+  "romaji": "ku",
+  "ko": "쿠",
+  "script": "katakana",
+  "group": "basic",
+  "row": "k",
+  "col": 2,
+  "day": 8,
+  "word": {
+   "kana": "クラス",
+   "ko": "반, 클래스"
+  },
+  "confuse": [
+   "ケ",
+   "タ"
+  ]
+ },
+ {
+  "id": "ka-ke",
+  "kana": "ケ",
+  "romaji": "ke",
+  "ko": "케",
+  "script": "katakana",
+  "group": "basic",
+  "row": "k",
+  "col": 3,
+  "day": 8,
+  "word": {
+   "kana": "ケーキ",
+   "ko": "케이크"
+  },
+  "confuse": [
+   "ク",
+   "タ"
+  ]
+ },
+ {
+  "id": "ka-ko",
+  "kana": "コ",
+  "romaji": "ko",
+  "ko": "코",
+  "script": "katakana",
+  "group": "basic",
+  "row": "k",
+  "col": 4,
+  "day": 8,
+  "word": {
+   "kana": "コーヒー",
+   "ko": "커피"
+  },
+  "confuse": [
+   "ユ",
+   "ロ"
+  ]
+ },
+ {
+  "id": "ka-sa",
+  "kana": "サ",
+  "romaji": "sa",
+  "ko": "사",
+  "script": "katakana",
+  "group": "basic",
+  "row": "s",
+  "col": 0,
+  "day": 8,
+  "word": {
+   "kana": "サラダ",
+   "ko": "샐러드"
+  }
+ },
+ {
+  "id": "ka-shi",
+  "kana": "シ",
+  "romaji": "shi",
+  "ko": "시",
+  "script": "katakana",
+  "group": "basic",
+  "row": "s",
+  "col": 1,
+  "day": 8,
+  "word": {
+   "kana": "タクシー",
+   "ko": "택시"
+  },
+  "confuse": [
+   "ツ"
+  ],
+  "tip": "'si'가 아니라 'shi'. 한국어 '시'와 거의 같습니다."
+ },
+ {
+  "id": "ka-su",
+  "kana": "ス",
+  "romaji": "su",
+  "ko": "스",
+  "script": "katakana",
+  "group": "basic",
+  "row": "s",
+  "col": 2,
+  "day": 8,
+  "word": {
+   "kana": "スキー",
+   "ko": "스키"
+  },
+  "confuse": [
+   "ヌ"
+  ],
+  "tip": "'수'보다 '스'에 가깝게, 입술을 내밀지 않고 발음합니다. です·ます의 す는 거의 'ㅅ'만 들립니다."
+ },
+ {
+  "id": "ka-se",
+  "kana": "セ",
+  "romaji": "se",
+  "ko": "세",
+  "script": "katakana",
+  "group": "basic",
+  "row": "s",
+  "col": 3,
+  "day": 8,
+  "word": {
+   "kana": "セーター",
+   "ko": "스웨터"
+  },
+  "confuse": [
+   "ヤ"
+  ]
+ },
+ {
+  "id": "ka-so",
+  "kana": "ソ",
+  "romaji": "so",
+  "ko": "소",
+  "script": "katakana",
+  "group": "basic",
+  "row": "s",
+  "col": 4,
+  "day": 8,
+  "word": {
+   "kana": "ソース",
+   "ko": "소스"
+  },
+  "confuse": [
+   "ン"
+  ]
+ },
+ {
+  "id": "ka-ta",
+  "kana": "タ",
+  "romaji": "ta",
+  "ko": "타",
+  "script": "katakana",
+  "group": "basic",
+  "row": "t",
+  "col": 0,
+  "day": 9,
+  "word": {
+   "kana": "タオル",
+   "ko": "수건"
+  },
+  "confuse": [
+   "ク",
+   "ケ"
+  ],
+  "tip": "단어 첫머리에서는 ㄷ과 ㅌ의 중간, 단어 중간에서는 ㄸ에 가깝게 들립니다."
+ },
+ {
+  "id": "ka-chi",
+  "kana": "チ",
+  "romaji": "chi",
+  "ko": "치",
+  "script": "katakana",
+  "group": "basic",
+  "row": "t",
+  "col": 1,
+  "day": 9,
+  "word": {
+   "kana": "チーズ",
+   "ko": "치즈"
+  },
+  "confuse": [
+   "テ"
+  ],
+  "tip": "'ti'가 아니라 'chi'. 한국어 '치'와 비슷합니다."
+ },
+ {
+  "id": "ka-tsu",
+  "kana": "ツ",
+  "romaji": "tsu",
+  "ko": "츠",
+  "script": "katakana",
+  "group": "basic",
+  "row": "t",
+  "col": 2,
+  "day": 9,
+  "word": {
+   "kana": "ツアー",
+   "ko": "투어"
+  },
+  "confuse": [
+   "シ"
+  ],
+  "tip": "한국어에 없는 소리입니다. 혀끝을 윗니 뒤에 붙였다 떼면서 '츠'. '쓰'나 '추'가 되지 않게 주의하세요."
+ },
+ {
+  "id": "ka-te",
+  "kana": "テ",
+  "romaji": "te",
+  "ko": "테",
+  "script": "katakana",
+  "group": "basic",
+  "row": "t",
+  "col": 3,
+  "day": 9,
+  "word": {
+   "kana": "テスト",
+   "ko": "시험, 테스트"
+  },
+  "confuse": [
+   "チ"
+  ]
+ },
+ {
+  "id": "ka-to",
+  "kana": "ト",
+  "romaji": "to",
+  "ko": "토",
+  "script": "katakana",
+  "group": "basic",
+  "row": "t",
+  "col": 4,
+  "day": 9,
+  "word": {
+   "kana": "トマト",
+   "ko": "토마토"
+  }
+ },
+ {
+  "id": "ka-na",
+  "kana": "ナ",
+  "romaji": "na",
+  "ko": "나",
+  "script": "katakana",
+  "group": "basic",
+  "row": "n",
+  "col": 0,
+  "day": 9,
+  "word": {
+   "kana": "バナナ",
+   "ko": "바나나"
+  },
+  "confuse": [
+   "メ"
+  ]
+ },
+ {
+  "id": "ka-ni",
+  "kana": "ニ",
+  "romaji": "ni",
+  "ko": "니",
+  "script": "katakana",
+  "group": "basic",
+  "row": "n",
+  "col": 1,
+  "day": 9,
+  "word": {
+   "kana": "テニス",
+   "ko": "테니스"
+  }
+ },
+ {
+  "id": "ka-nu",
+  "kana": "ヌ",
+  "romaji": "nu",
+  "ko": "누",
+  "script": "katakana",
+  "group": "basic",
+  "row": "n",
+  "col": 2,
+  "day": 9,
+  "word": {
+   "kana": "ヌードル",
+   "ko": "누들"
+  },
+  "confuse": [
+   "ス"
+  ]
+ },
+ {
+  "id": "ka-ne",
+  "kana": "ネ",
+  "romaji": "ne",
+  "ko": "네",
+  "script": "katakana",
+  "group": "basic",
+  "row": "n",
+  "col": 3,
+  "day": 9,
+  "word": {
+   "kana": "ネクタイ",
+   "ko": "넥타이"
+  }
+ },
+ {
+  "id": "ka-no",
+  "kana": "ノ",
+  "romaji": "no",
+  "ko": "노",
+  "script": "katakana",
+  "group": "basic",
+  "row": "n",
+  "col": 4,
+  "day": 9,
+  "word": {
+   "kana": "ノート",
+   "ko": "노트"
+  },
+  "confuse": [
+   "メ"
+  ]
+ },
+ {
+  "id": "ka-ha",
+  "kana": "ハ",
+  "romaji": "ha",
+  "ko": "하",
+  "script": "katakana",
+  "group": "basic",
+  "row": "h",
+  "col": 0,
+  "day": 9,
+  "word": {
+   "kana": "ハンカチ",
+   "ko": "손수건"
+  }
+ },
+ {
+  "id": "ka-hi",
+  "kana": "ヒ",
+  "romaji": "hi",
+  "ko": "히",
+  "script": "katakana",
+  "group": "basic",
+  "row": "h",
+  "col": 1,
+  "day": 9,
+  "word": {
+   "kana": "ヒーター",
+   "ko": "히터"
+  }
+ },
+ {
+  "id": "ka-fu",
+  "kana": "フ",
+  "romaji": "fu",
+  "ko": "후",
+  "script": "katakana",
+  "group": "basic",
+  "row": "h",
+  "col": 2,
+  "day": 9,
+  "word": {
+   "kana": "フランス",
+   "ko": "프랑스"
+  },
+  "confuse": [
+   "ウ",
+   "ワ",
+   "ラ",
+   "ヲ"
+  ],
+  "tip": "영어 f도 한국어 '후'도 아닙니다. 촛불을 불듯 두 입술 사이로 바람을 내보냅니다."
+ },
+ {
+  "id": "ka-he",
+  "kana": "ヘ",
+  "romaji": "he",
+  "ko": "헤",
+  "script": "katakana",
+  "group": "basic",
+  "row": "h",
+  "col": 3,
+  "day": 9,
+  "word": {
+   "kana": "ヘルメット",
+   "ko": "헬멧"
+  }
+ },
+ {
+  "id": "ka-ho",
+  "kana": "ホ",
+  "romaji": "ho",
+  "ko": "호",
+  "script": "katakana",
+  "group": "basic",
+  "row": "h",
+  "col": 4,
+  "day": 9,
+  "word": {
+   "kana": "ホテル",
+   "ko": "호텔"
+  },
+  "confuse": [
+   "オ"
+  ]
+ },
+ {
+  "id": "ka-ma",
+  "kana": "マ",
+  "romaji": "ma",
+  "ko": "마",
+  "script": "katakana",
+  "group": "basic",
+  "row": "m",
+  "col": 0,
+  "day": 10,
+  "word": {
+   "kana": "マスク",
+   "ko": "마스크"
+  },
+  "confuse": [
+   "ア"
+  ]
+ },
+ {
+  "id": "ka-mi",
+  "kana": "ミ",
+  "romaji": "mi",
+  "ko": "미",
+  "script": "katakana",
+  "group": "basic",
+  "row": "m",
+  "col": 1,
+  "day": 10,
+  "word": {
+   "kana": "ミルク",
+   "ko": "우유"
+  }
+ },
+ {
+  "id": "ka-mu",
+  "kana": "ム",
+  "romaji": "mu",
+  "ko": "무",
+  "script": "katakana",
+  "group": "basic",
+  "row": "m",
+  "col": 2,
+  "day": 10,
+  "word": {
+   "kana": "ゲーム",
+   "ko": "게임"
+  }
+ },
+ {
+  "id": "ka-me",
+  "kana": "メ",
+  "romaji": "me",
+  "ko": "메",
+  "script": "katakana",
+  "group": "basic",
+  "row": "m",
+  "col": 3,
+  "day": 10,
+  "word": {
+   "kana": "メール",
+   "ko": "메일"
+  },
+  "confuse": [
+   "ナ",
+   "ノ"
+  ]
+ },
+ {
+  "id": "ka-mo",
+  "kana": "モ",
+  "romaji": "mo",
+  "ko": "모",
+  "script": "katakana",
+  "group": "basic",
+  "row": "m",
+  "col": 4,
+  "day": 10,
+  "word": {
+   "kana": "メモ",
+   "ko": "메모"
+  }
+ },
+ {
+  "id": "ka-ya",
+  "kana": "ヤ",
+  "romaji": "ya",
+  "ko": "야",
+  "script": "katakana",
+  "group": "basic",
+  "row": "y",
+  "col": 0,
+  "day": 10,
+  "word": {
+   "kana": "タイヤ",
+   "ko": "타이어"
+  },
+  "confuse": [
+   "セ"
+  ]
+ },
+ {
+  "id": "ka-yu",
+  "kana": "ユ",
+  "romaji": "yu",
+  "ko": "유",
+  "script": "katakana",
+  "group": "basic",
+  "row": "y",
+  "col": 2,
+  "day": 10,
+  "word": {
+   "kana": "ユニフォーム",
+   "ko": "유니폼"
+  },
+  "confuse": [
+   "コ",
+   "ロ"
+  ]
+ },
+ {
+  "id": "ka-yo",
+  "kana": "ヨ",
+  "romaji": "yo",
+  "ko": "요",
+  "script": "katakana",
+  "group": "basic",
+  "row": "y",
+  "col": 4,
+  "day": 10,
+  "word": {
+   "kana": "ヨーグルト",
+   "ko": "요구르트"
+  }
+ },
+ {
+  "id": "ka-ra",
+  "kana": "ラ",
+  "romaji": "ra",
+  "ko": "라",
+  "script": "katakana",
+  "group": "basic",
+  "row": "r",
+  "col": 0,
+  "day": 10,
+  "word": {
+   "kana": "ラーメン",
+   "ko": "라멘"
+  },
+  "confuse": [
+   "フ",
+   "ヲ"
+  ],
+  "tip": "영어 r/l이 아니라 한국어 초성 ㄹ과 거의 같습니다. ら행 전체가 그렇습니다."
+ },
+ {
+  "id": "ka-ri",
+  "kana": "リ",
+  "romaji": "ri",
+  "ko": "리",
+  "script": "katakana",
+  "group": "basic",
+  "row": "r",
+  "col": 1,
+  "day": 10,
+  "word": {
+   "kana": "アメリカ",
+   "ko": "미국"
+  }
+ },
+ {
+  "id": "ka-ru",
+  "kana": "ル",
+  "romaji": "ru",
+  "ko": "루",
+  "script": "katakana",
+  "group": "basic",
+  "row": "r",
+  "col": 2,
+  "day": 10,
+  "word": {
+   "kana": "ビール",
+   "ko": "맥주"
+  },
+  "confuse": [
+   "レ"
+  ]
+ },
+ {
+  "id": "ka-re",
+  "kana": "レ",
+  "romaji": "re",
+  "ko": "레",
+  "script": "katakana",
+  "group": "basic",
+  "row": "r",
+  "col": 3,
+  "day": 10,
+  "word": {
+   "kana": "レストラン",
+   "ko": "레스토랑"
+  },
+  "confuse": [
+   "ル"
+  ]
+ },
+ {
+  "id": "ka-ro",
+  "kana": "ロ",
+  "romaji": "ro",
+  "ko": "로",
+  "script": "katakana",
+  "group": "basic",
+  "row": "r",
+  "col": 4,
+  "day": 10,
+  "word": {
+   "kana": "ロボット",
+   "ko": "로봇"
+  },
+  "confuse": [
+   "コ",
+   "ユ"
+  ]
+ },
+ {
+  "id": "ka-wa",
+  "kana": "ワ",
+  "romaji": "wa",
+  "ko": "와",
+  "script": "katakana",
+  "group": "basic",
+  "row": "w",
+  "col": 0,
+  "day": 10,
+  "word": {
+   "kana": "ワイン",
+   "ko": "와인"
+  },
+  "confuse": [
+   "ウ",
+   "フ"
+  ]
+ },
+ {
+  "id": "ka-wo",
+  "kana": "ヲ",
+  "romaji": "wo",
+  "ko": "오",
+  "script": "katakana",
+  "group": "basic",
+  "row": "w",
+  "col": 4,
+  "day": 10,
+  "rare": "현대어에서는 거의 쓰지 않음",
+  "confuse": [
+   "ラ",
+   "フ"
+  ],
+  "tip": "현대 일본어에서는 거의 쓰이지 않습니다. 모양만 알아 두면 충분합니다."
+ },
+ {
+  "id": "ka-n",
+  "kana": "ン",
+  "romaji": "n",
+  "ko": "응",
+  "script": "katakana",
+  "group": "basic",
+  "row": "nn",
+  "col": 0,
+  "day": 10,
+  "word": {
+   "kana": "パン",
+   "ko": "빵"
+  },
+  "confuse": [
+   "ソ"
+  ],
+  "tip": "뒤에 오는 소리에 따라 ㄴ·ㅁ·ㅇ으로 변하는 받침 소리입니다. (さんぽ=삼포, ほんと=혼토, まんが=망가)"
+ },
+ {
+  "id": "ka-ga",
+  "kana": "ガ",
+  "romaji": "ga",
+  "ko": "가",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "ガム",
+   "ko": "껌"
+  },
+  "tip": "목에서 울리는 유성음 g입니다. 단어 첫머리에서 한국어 '가'는 무성음에 가까우므로, 앞에 '응'을 살짝 넣는 느낌으로 울려 주세요."
+ },
+ {
+  "id": "ka-gi",
+  "kana": "ギ",
+  "romaji": "gi",
+  "ko": "기",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "ギター",
+   "ko": "기타"
+  }
+ },
+ {
+  "id": "ka-gu",
+  "kana": "グ",
+  "romaji": "gu",
+  "ko": "구",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "グラス",
+   "ko": "유리잔"
+  }
+ },
+ {
+  "id": "ka-ge",
+  "kana": "ゲ",
+  "romaji": "ge",
+  "ko": "게",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 3,
+  "day": 11,
+  "word": {
+   "kana": "ゲスト",
+   "ko": "게스트, 손님"
+  }
+ },
+ {
+  "id": "ka-go",
+  "kana": "ゴ",
+  "romaji": "go",
+  "ko": "고",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "g",
+  "col": 4,
+  "day": 11,
+  "word": {
+   "kana": "ゴルフ",
+   "ko": "골프"
+  }
+ },
+ {
+  "id": "ka-za",
+  "kana": "ザ",
+  "romaji": "za",
+  "ko": "자",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "ピザ",
+   "ko": "피자"
+  },
+  "tip": "한국어에 없는 유성음 [z]입니다. '자'가 아니라 영어 zoo의 z처럼 혀끝을 떨어 주세요. ざ·ず·ぜ·ぞ가 모두 그렇습니다."
+ },
+ {
+  "id": "ka-ji",
+  "kana": "ジ",
+  "romaji": "ji",
+  "ko": "지",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "ラジオ",
+   "ko": "라디오"
+  },
+  "tip": "'지'와 비슷하지만 성대를 울리는 유성음입니다."
+ },
+ {
+  "id": "ka-zu",
+  "kana": "ズ",
+  "romaji": "zu",
+  "ko": "즈",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "ズボン",
+   "ko": "바지"
+  }
+ },
+ {
+  "id": "ka-ze",
+  "kana": "ゼ",
+  "romaji": "ze",
+  "ko": "제",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 3,
+  "day": 11,
+  "word": {
+   "kana": "ゼロ",
+   "ko": "0, 제로"
+  }
+ },
+ {
+  "id": "ka-zo",
+  "kana": "ゾ",
+  "romaji": "zo",
+  "ko": "조",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "z",
+  "col": 4,
+  "day": 11,
+  "word": {
+   "kana": "ゾーン",
+   "ko": "존, 구역"
+  }
+ },
+ {
+  "id": "ka-da",
+  "kana": "ダ",
+  "romaji": "da",
+  "ko": "다",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "ダンス",
+   "ko": "댄스"
+  },
+  "tip": "성대를 울리는 유성음 d입니다. 단어 첫머리의 한국어 '다'보다 더 울리게 발음합니다."
+ },
+ {
+  "id": "ka-di",
+  "kana": "ヂ",
+  "romaji": "ji",
+  "ko": "지",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 1,
+  "day": 11,
+  "rare": "거의 쓰지 않음",
+  "tip": "じ와 발음이 같습니다. 'はなぢ(코피)'처럼 극히 일부 단어에만 쓰입니다."
+ },
+ {
+  "id": "ka-du",
+  "kana": "ヅ",
+  "romaji": "zu",
+  "ko": "즈",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 2,
+  "day": 11,
+  "rare": "거의 쓰지 않음",
+  "tip": "ず와 발음이 같습니다. 'つづく(계속되다)'처럼 일부 단어에만 쓰입니다."
+ },
+ {
+  "id": "ka-de",
+  "kana": "デ",
+  "romaji": "de",
+  "ko": "데",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 3,
+  "day": 11,
+  "word": {
+   "kana": "デパート",
+   "ko": "백화점"
+  }
+ },
+ {
+  "id": "ka-do",
+  "kana": "ド",
+  "romaji": "do",
+  "ko": "도",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "d",
+  "col": 4,
+  "day": 11,
+  "word": {
+   "kana": "ドア",
+   "ko": "문"
+  }
+ },
+ {
+  "id": "ka-ba",
+  "kana": "バ",
+  "romaji": "ba",
+  "ko": "바",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "バス",
+   "ko": "버스"
+  },
+  "tip": "성대를 울리는 유성음 b입니다. 단어 첫머리의 한국어 '바'보다 더 울리게 발음합니다."
+ },
+ {
+  "id": "ka-bi",
+  "kana": "ビ",
+  "romaji": "bi",
+  "ko": "비",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "テレビ",
+   "ko": "텔레비전"
+  }
+ },
+ {
+  "id": "ka-bu",
+  "kana": "ブ",
+  "romaji": "bu",
+  "ko": "부",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "テーブル",
+   "ko": "테이블"
+  }
+ },
+ {
+  "id": "ka-be",
+  "kana": "ベ",
+  "romaji": "be",
+  "ko": "베",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 3,
+  "day": 11,
+  "word": {
+   "kana": "ベッド",
+   "ko": "침대"
+  }
+ },
+ {
+  "id": "ka-bo",
+  "kana": "ボ",
+  "romaji": "bo",
+  "ko": "보",
+  "script": "katakana",
+  "group": "dakuten",
+  "row": "b",
+  "col": 4,
+  "day": 11,
+  "word": {
+   "kana": "ボール",
+   "ko": "공"
+  }
+ },
+ {
+  "id": "ka-pa",
+  "kana": "パ",
+  "romaji": "pa",
+  "ko": "파",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "パソコン",
+   "ko": "컴퓨터(PC)"
+  },
+  "tip": "한국어 'ㅍ'보다 숨을 약하게, 'ㅃ'과 'ㅍ'의 중간 정도로 발음합니다."
+ },
+ {
+  "id": "ka-pi",
+  "kana": "ピ",
+  "romaji": "pi",
+  "ko": "피",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "ピアノ",
+   "ko": "피아노"
+  }
+ },
+ {
+  "id": "ka-pu",
+  "kana": "プ",
+  "romaji": "pu",
+  "ko": "푸",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "プール",
+   "ko": "수영장"
+  }
+ },
+ {
+  "id": "ka-pe",
+  "kana": "ペ",
+  "romaji": "pe",
+  "ko": "페",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 3,
+  "day": 11,
+  "word": {
+   "kana": "ペン",
+   "ko": "펜"
+  }
+ },
+ {
+  "id": "ka-po",
+  "kana": "ポ",
+  "romaji": "po",
+  "ko": "포",
+  "script": "katakana",
+  "group": "handakuten",
+  "row": "p",
+  "col": 4,
+  "day": 11,
+  "word": {
+   "kana": "ポケット",
+   "ko": "주머니"
+  }
+ },
+ {
+  "id": "ka-kya",
+  "kana": "キャ",
+  "romaji": "kya",
+  "ko": "캬",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ky",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "キャンプ",
+   "ko": "캠프"
+  },
+  "tip": "き에 작은 ゃ를 붙여 한 박자로 읽습니다. 큰 や를 쓴 きや(키야, 두 박자)와 다릅니다."
+ },
+ {
+  "id": "ka-kyu",
+  "kana": "キュ",
+  "romaji": "kyu",
+  "ko": "큐",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ky",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "バーベキュー",
+   "ko": "바비큐"
+  }
+ },
+ {
+  "id": "ka-kyo",
+  "kana": "キョ",
+  "romaji": "kyo",
+  "ko": "쿄",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ky",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "トウキョウ",
+   "ko": "도쿄(東京)"
+  }
+ },
+ {
+  "id": "ka-sha",
+  "kana": "シャ",
+  "romaji": "sha",
+  "ko": "샤",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "sh",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "シャツ",
+   "ko": "셔츠"
+  }
+ },
+ {
+  "id": "ka-shu",
+  "kana": "シュ",
+  "romaji": "shu",
+  "ko": "슈",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "sh",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "シュート",
+   "ko": "슛"
+  }
+ },
+ {
+  "id": "ka-sho",
+  "kana": "ショ",
+  "romaji": "sho",
+  "ko": "쇼",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "sh",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "ショップ",
+   "ko": "숍, 가게"
+  }
+ },
+ {
+  "id": "ka-cha",
+  "kana": "チャ",
+  "romaji": "cha",
+  "ko": "차",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ch",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "チャンス",
+   "ko": "찬스"
+  },
+  "tip": "표기는 '차'에 가깝습니다. ちゃ·ちゅ·ちょ = cha·chu·cho."
+ },
+ {
+  "id": "ka-chu",
+  "kana": "チュ",
+  "romaji": "chu",
+  "ko": "추",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ch",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "チューリップ",
+   "ko": "튤립"
+  }
+ },
+ {
+  "id": "ka-cho",
+  "kana": "チョ",
+  "romaji": "cho",
+  "ko": "초",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ch",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "チョコレート",
+   "ko": "초콜릿"
+  }
+ },
+ {
+  "id": "ka-nya",
+  "kana": "ニャ",
+  "romaji": "nya",
+  "ko": "냐",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ny",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "ニャー",
+   "ko": "야옹"
+  }
+ },
+ {
+  "id": "ka-nyu",
+  "kana": "ニュ",
+  "romaji": "nyu",
+  "ko": "뉴",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ny",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "ニュース",
+   "ko": "뉴스"
+  }
+ },
+ {
+  "id": "ka-nyo",
+  "kana": "ニョ",
+  "romaji": "nyo",
+  "ko": "뇨",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ny",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "ニョッキ",
+   "ko": "뇨키"
+  }
+ },
+ {
+  "id": "ka-hya",
+  "kana": "ヒャ",
+  "romaji": "hya",
+  "ko": "햐",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "hy",
+  "col": 0,
+  "day": 11,
+  "rare": "드묾"
+ },
+ {
+  "id": "ka-hyu",
+  "kana": "ヒュ",
+  "romaji": "hyu",
+  "ko": "휴",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "hy",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "ヒューマン",
+   "ko": "휴먼"
+  }
+ },
+ {
+  "id": "ka-hyo",
+  "kana": "ヒョ",
+  "romaji": "hyo",
+  "ko": "효",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "hy",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "ヒョウ",
+   "ko": "표범"
+  }
+ },
+ {
+  "id": "ka-mya",
+  "kana": "ミャ",
+  "romaji": "mya",
+  "ko": "먀",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "my",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "ミャンマー",
+   "ko": "미얀마"
+  }
+ },
+ {
+  "id": "ka-myu",
+  "kana": "ミュ",
+  "romaji": "myu",
+  "ko": "뮤",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "my",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "ミュージック",
+   "ko": "뮤직"
+  }
+ },
+ {
+  "id": "ka-myo",
+  "kana": "ミョ",
+  "romaji": "myo",
+  "ko": "묘",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "my",
+  "col": 2,
+  "day": 11,
+  "rare": "드묾"
+ },
+ {
+  "id": "ka-rya",
+  "kana": "リャ",
+  "romaji": "rya",
+  "ko": "랴",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ry",
+  "col": 0,
+  "day": 11,
+  "rare": "드묾"
+ },
+ {
+  "id": "ka-ryu",
+  "kana": "リュ",
+  "romaji": "ryu",
+  "ko": "류",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ry",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "リュック",
+   "ko": "배낭"
+  }
+ },
+ {
+  "id": "ka-ryo",
+  "kana": "リョ",
+  "romaji": "ryo",
+  "ko": "료",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "ry",
+  "col": 2,
+  "day": 11,
+  "rare": "드묾"
+ },
+ {
+  "id": "ka-gya",
+  "kana": "ギャ",
+  "romaji": "gya",
+  "ko": "갸",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "gy",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "ギャグ",
+   "ko": "개그"
+  }
+ },
+ {
+  "id": "ka-gyu",
+  "kana": "ギュ",
+  "romaji": "gyu",
+  "ko": "규",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "gy",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "レギュラー",
+   "ko": "레귤러"
+  }
+ },
+ {
+  "id": "ka-gyo",
+  "kana": "ギョ",
+  "romaji": "gyo",
+  "ko": "교",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "gy",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "ギョーザ",
+   "ko": "교자(만두)"
+  }
+ },
+ {
+  "id": "ka-ja",
+  "kana": "ジャ",
+  "romaji": "ja",
+  "ko": "자",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "j",
+  "col": 0,
+  "day": 11,
+  "word": {
+   "kana": "ジャズ",
+   "ko": "재즈"
+  },
+  "tip": "じゃ·じゅ·じょ = ja·ju·jo. 유성음으로 울려 줍니다."
+ },
+ {
+  "id": "ka-ju",
+  "kana": "ジュ",
+  "romaji": "ju",
+  "ko": "주",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "j",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "ジュース",
+   "ko": "주스"
+  }
+ },
+ {
+  "id": "ka-jo",
+  "kana": "ジョ",
+  "romaji": "jo",
+  "ko": "조",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "j",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "ジョギング",
+   "ko": "조깅"
+  }
+ },
+ {
+  "id": "ka-bya",
+  "kana": "ビャ",
+  "romaji": "bya",
+  "ko": "뱌",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "by",
+  "col": 0,
+  "day": 11,
+  "rare": "드묾"
+ },
+ {
+  "id": "ka-byu",
+  "kana": "ビュ",
+  "romaji": "byu",
+  "ko": "뷰",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "by",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "インタビュー",
+   "ko": "인터뷰"
+  }
+ },
+ {
+  "id": "ka-byo",
+  "kana": "ビョ",
+  "romaji": "byo",
+  "ko": "뵤",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "by",
+  "col": 2,
+  "day": 11,
+  "rare": "드묾"
+ },
+ {
+  "id": "ka-pya",
+  "kana": "ピャ",
+  "romaji": "pya",
+  "ko": "퍄",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "py",
+  "col": 0,
+  "day": 11,
+  "rare": "드묾"
+ },
+ {
+  "id": "ka-pyu",
+  "kana": "ピュ",
+  "romaji": "pyu",
+  "ko": "퓨",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "py",
+  "col": 1,
+  "day": 11,
+  "word": {
+   "kana": "コンピューター",
+   "ko": "컴퓨터"
+  }
+ },
+ {
+  "id": "ka-pyo",
+  "kana": "ピョ",
+  "romaji": "pyo",
+  "ko": "표",
+  "script": "katakana",
+  "group": "yoon",
+  "row": "py",
+  "col": 2,
+  "day": 11,
+  "word": {
+   "kana": "ピョンヤン",
+   "ko": "평양"
+  }
+ },
+ {
+  "id": "ka-xfa",
+  "kana": "ファ",
+  "romaji": "fa",
+  "ko": "파(fa)",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "ファン",
+   "ko": "팬"
+  }
+ },
+ {
+  "id": "ka-xfi",
+  "kana": "フィ",
+  "romaji": "fi",
+  "ko": "피(fi)",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "フィルム",
+   "ko": "필름"
+  }
+ },
+ {
+  "id": "ka-xfe",
+  "kana": "フェ",
+  "romaji": "fe",
+  "ko": "페(fe)",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "カフェ",
+   "ko": "카페"
+  }
+ },
+ {
+  "id": "ka-xfo",
+  "kana": "フォ",
+  "romaji": "fo",
+  "ko": "포(fo)",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "フォーク",
+   "ko": "포크"
+  }
+ },
+ {
+  "id": "ka-xti",
+  "kana": "ティ",
+  "romaji": "ti",
+  "ko": "티",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "パーティー",
+   "ko": "파티"
+  }
+ },
+ {
+  "id": "ka-xdi",
+  "kana": "ディ",
+  "romaji": "di",
+  "ko": "디",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "ディズニー",
+   "ko": "디즈니"
+  }
+ },
+ {
+  "id": "ka-xwi",
+  "kana": "ウィ",
+  "romaji": "wi",
+  "ko": "위",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "ウィーク",
+   "ko": "위크(주)"
+  }
+ },
+ {
+  "id": "ka-xwe",
+  "kana": "ウェ",
+  "romaji": "we",
+  "ko": "웨",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "ウェブ",
+   "ko": "웹"
+  }
+ },
+ {
+  "id": "ka-xwo",
+  "kana": "ウォ",
+  "romaji": "wo",
+  "ko": "워",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "ウォーター",
+   "ko": "워터"
+  }
+ },
+ {
+  "id": "ka-xshe",
+  "kana": "シェ",
+  "romaji": "she",
+  "ko": "셰",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "シェフ",
+   "ko": "셰프"
+  }
+ },
+ {
+  "id": "ka-xje",
+  "kana": "ジェ",
+  "romaji": "je",
+  "ko": "제",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "ジェット",
+   "ko": "제트"
+  }
+ },
+ {
+  "id": "ka-xche",
+  "kana": "チェ",
+  "romaji": "che",
+  "ko": "체",
+  "script": "katakana",
+  "group": "ext",
+  "row": "ext",
+  "col": 0,
+  "day": 12,
+  "word": {
+   "kana": "チェック",
+   "ko": "체크"
+  }
+ }
+]

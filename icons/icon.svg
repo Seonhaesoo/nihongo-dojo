@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#f3ecdf"/>
+  <rect x="86" y="86" width="340" height="340" rx="34" fill="#cf3a24" transform="rotate(-5 256 256)"/>
+  <text x="256" y="356" text-anchor="middle" font-family="'Shippori Mincho B1','Yu Mincho','MS Mincho',serif" font-weight="800" font-size="270" fill="#fff6ea" transform="rotate(-5 256 256)">道</text>
+</svg>
